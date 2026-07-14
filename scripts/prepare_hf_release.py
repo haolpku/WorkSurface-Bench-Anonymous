@@ -24,7 +24,7 @@ MODELS = (
     "gemini-3.1-pro-preview",
     "gpt-5.5",
 )
-SETTINGS = ("S1", "S2", "S3", "S4", "S5")
+SETTINGS = ("S1", "S2", "S3", "S4", "S5", "S6")
 AUDIT_COLUMNS = (
     "Question natural?",
     "Answerable from evidence?",
@@ -203,8 +203,8 @@ def prepare_runs(project: Path, release: Path, task_ids: set[str]) -> dict:
                 }
             )
 
-    if len(score_rows) != 23020:
-        raise ValueError(f"Expected 23,020 trajectory scores, found {len(score_rows)}")
+    if len(score_rows) != 27624:
+        raise ValueError(f"Expected 27,624 trajectory scores, found {len(score_rows)}")
     result_dir = release / "results"
     result_dir.mkdir(parents=True, exist_ok=True)
     pd.DataFrame(score_rows).to_parquet(result_dir / "trajectory_scores.parquet", index=False)
@@ -398,7 +398,7 @@ right evidence, and produce correct answers.
 - **5** persona-scoped workspaces
 - **{task_stats['task_type']['cross_surface']}** cross-surface, **{task_stats['task_type']['table_only']}** table-only, **{task_stats['task_type']['rag_only']}** RAG-only, and **{task_stats['task_type']['graph_only']}** graph-only tasks
 - Cross-surface composition: **{task_stats['surface_combo']['rag+graph']} RAG+Graph**, **{task_stats['surface_combo']['graph+table']} Graph+Table**, **{task_stats['surface_combo']['rag+table']} RAG+Table**, and **{task_stats['surface_combo']['rag+graph+table']} RAG+Graph+Table**
-- **23,020** retained trajectories: 4 models × 5 settings × 1,151 tasks, with zero protocol errors
+- **27,624** retained trajectories: 4 models × 6 settings × 1,151 tasks, with zero protocol errors
 - Human audit: 3 annotators on a stratified 200-task sample; all 200 pass all six criteria by majority vote, and 192 are unanimous across all criteria
 
 ## Repository structure
@@ -408,7 +408,7 @@ data/                  Viewer-friendly Parquet and complete task JSONL
 resources/profiles/    Canonical KB documents, table Parquet files, and graphs
 resources/skills/      Skill metadata used by the benchmark
 schema/                Task JSON schema
-trajectories/          Raw model trajectories for all 20 official runs
+trajectories/          Raw model trajectories for all 24 official runs
 results/               Normalized trajectory scores and full scored reports
 audits/                Anonymized human votes, majorities, and disagreements
 release_manifest.json  Machine-readable counts and run summaries
@@ -433,7 +433,8 @@ audit = load_dataset("parquet", data_files="audits/human_audit_majority.parquet"
 - **S2 — Always RAG:** document retrieval is the only exposed surface.
 - **S3 — Single-surface routing:** the model selects one surface before answering.
 - **S4 — All tools:** RAG, table, and graph tools are exposed to a ReAct agent.
-- **S5 — Gold-surface guided:** gold surface labels are supplied, while tool use and answering remain model-controlled. This is a diagnostic control condition, not a deployable baseline.
+- **S5 — Gold-constrained:** gold surface labels are supplied and only the required surface tools are exposed.
+- **S6 — Gold-hint/all:** the same labels are supplied while all surface tools remain exposed, isolating the informational intervention from tool removal.
 
 The aggregate score is `0.35 Answer + 0.30 Evidence + 0.25 Route + 0.10 Efficiency`.
 

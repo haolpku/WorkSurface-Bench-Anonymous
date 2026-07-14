@@ -108,7 +108,7 @@ def _truncate(obj, limit: int = 1500) -> str:
 
 
 def react_loop(task: dict, backbone, tools, allowed_surfaces: list[str],
-               max_steps: int = 8):
+               max_steps: int = 8, surface_hint: list[str] | None = None):
     """Run the loop; returns the model's final answer string. Side effect:
     tools.trace / surfaces_used / evidence sets are populated."""
     menu = _tool_menu(allowed_surfaces)
@@ -124,6 +124,13 @@ def react_loop(task: dict, backbone, tools, allowed_surfaces: list[str],
             f"are \"t<id>::<filename>\"; when answering with files, return the "
             f"bare <filename> only."
         )
+    routing_hint = ""
+    if surface_hint:
+        routing_hint = (
+            "\nRouting hint: the task requires evidence from these surface "
+            f"types: {', '.join(surface_hint)}. All tools remain available; "
+            "decide which calls are needed and produce the answer yourself."
+        )
     system = (
         "You are an enterprise data agent. Answer the question by calling "
         "tools over the available knowledge surfaces. Each turn, reply with "
@@ -133,7 +140,7 @@ def react_loop(task: dict, backbone, tools, allowed_surfaces: list[str],
         "Give final_answer as a bare number for numeric questions, or a JSON "
         "array for list questions. If the evidence is insufficient, use "
         "{\"final_answer\":\"INSUFFICIENT_EVIDENCE\"}.\n\n"
-        f"Available tools:\n{menu}{graph_hint}"
+        f"Available tools:\n{menu}{graph_hint}{routing_hint}"
     )
     messages = [
         {"role": "system", "content": system},

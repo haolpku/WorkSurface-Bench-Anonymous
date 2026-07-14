@@ -15,6 +15,7 @@ runner can log why a task scored the way it did.
 
 from __future__ import annotations
 
+import json
 import math
 import re
 from dataclasses import dataclass, field
@@ -132,7 +133,51 @@ def score_boolean(gold: bool, pred: Any) -> AnswerResult:
 
 
 def score_string(gold: str, pred: Any) -> AnswerResult:
+    # Some cross-surface tasks have a typed, ordered composite answer stored in
+    # the release format as ``item; value``.  ReAct models naturally emit the
+    # same answer as a JSON array.  Compare the elements rather than the
+    # serialization so equivalent structured answers are not marked wrong.
+    if ";" in gold:
+        gold_parts = [part.strip() for part in gold.split(";")]
+        pred_parts = _parse_composite(pred)
+        if pred_parts is not None:
+            ok = (len(gold_parts) == len(pred_parts) and
+                  all(_composite_item_equal(g, p)
+                      for g, p in zip(gold_parts, pred_parts)))
+            return AnswerResult(
+                1.0 if ok else 0.0,
+                {"method": "ordered_composite_exact",
+                 "n_gold": len(gold_parts), "n_pred": len(pred_parts)},
+            )
     return AnswerResult(1.0 if _norm_str(gold) == _norm_str(pred) else 0.0, {})
+
+
+def _parse_composite(value: Any) -> list[Any] | None:
+    if isinstance(value, (list, tuple)):
+        return list(value)
+    if not isinstance(value, str):
+        return None
+    text = value.strip()
+    if text.startswith("[") and text.endswith("]"):
+        try:
+            parsed = json.loads(text)
+        except (TypeError, ValueError):
+            parsed = None
+        if isinstance(parsed, list):
+            return parsed
+    if ";" in text:
+        return [part.strip() for part in text.split(";")]
+    return None
+
+
+def _composite_item_equal(gold: Any, pred: Any) -> bool:
+    """Strict element equality with numeric serialization normalization."""
+    g = _norm_str(gold).strip("\"'")
+    p = _norm_str(pred).strip("\"'")
+    number = re.compile(r"^[+-]?(?:\d+(?:\.\d*)?|\.\d+)$")
+    if number.fullmatch(g) and number.fullmatch(p):
+        return math.isclose(float(g), float(p), rel_tol=0.0, abs_tol=1e-9)
+    return g == p
 
 
 def score_abstain(pred: Any) -> AnswerResult:

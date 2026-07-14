@@ -56,10 +56,10 @@ The final task objects validate against `schemas/task.schema.json`. Table SQL,
 RAG spans, graph paths, task IDs, and efficiency budgets are checked before a
 release is frozen.
 
-## 4. Run the five agent settings
+## 4. Run the six agent settings
 
 ```bash
-for setting in S1 S2 S3 S4 S5; do
+for setting in S1 S2 S3 S4 S5 S6; do
   python -m runner.run_bench \
     --setting "$setting" \
     --model mock \
@@ -72,7 +72,7 @@ done
 
 Replace `mock` with a provider model ID after exporting `WSB_API_BASE` and
 `WSB_API_KEY`. The official release contains one retained, zero-protocol-error
-trajectory for every task × model × setting cell: 4 × 5 × 1,151 = 23,020.
+trajectory for every task × model × setting cell: 4 × 6 × 1,151 = 27,624.
 
 ## 5. Aggregate results
 
@@ -95,7 +95,7 @@ python scripts/prepare_hf_release.py \
   --annotations /path/to/anonymized-audit-workbooks
 ```
 
-The builder verifies 1,151 unique tasks, 20 complete runs, 23,020 trajectory
+The builder verifies 1,151 unique tasks, 24 complete runs, 27,624 trajectory
 scores, zero retained protocol errors, and the recomputed 2-of-3 human-audit
 majorities. It exports viewer-friendly Parquet alongside the complete JSONL and
 canonical resources.

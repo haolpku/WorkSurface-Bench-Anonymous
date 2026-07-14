@@ -45,6 +45,18 @@ def test_boolean_abstain():
     print("  boolean/abstain OK")
 
 
+def test_composite_string():
+    task = {"gold_answer": "report.xlsx; 20", "answer_type": "string"}
+    assert score_answer(task, '["report.xlsx", 20]').score == 1.0
+    assert score_answer(task, "report.xlsx; 20").score == 1.0
+    assert score_answer(task, '["report.xlsx", 21]').score == 0.0
+    assert score_answer(task, '[20, "report.xlsx"]').score == 0.0
+    # Ordinary strings retain the original normalized exact-match behavior.
+    ordinary = {"gold_answer": "Report Ready", "answer_type": "string"}
+    assert score_answer(ordinary, " report   ready ").score == 1.0
+    print("  composite string OK")
+
+
 def test_route():
     r = score_route(["rag", "table"], ["rag", "table"])
     assert r.f1 == 1.0
@@ -68,6 +80,17 @@ def test_evidence():
     # 1 rag hit + 1 of 2 table hits = 2/3 items
     assert approx(r.score, 2/3, tol=1e-3), r.score
     assert r.per_surface["rag"] == 1.0 and r.per_surface["table"] == 0.5
+    graph_gold = [{"surface": "graph",
+                   "graph_path": ["task_1", "task_requires_file", "t1::a.csv"]}]
+    assert score_evidence(graph_gold, {"graph_nodes": ["task_1"]}).score == 0.0
+    assert score_evidence(graph_gold,
+                          {"graph_nodes": ["task_1", "t1::a.csv"]}).score == 1.0
+    set_gold = [{"surface": "graph",
+                 "verified_complete_set": ["a.csv", "b.csv"]}]
+    assert score_evidence(set_gold,
+                          {"graph_nodes": ["t1::a.csv"]}).score == 0.0
+    assert score_evidence(set_gold,
+                          {"graph_nodes": ["t1::a.csv", "t1::b.csv"]}).score == 1.0
     print("  evidence OK")
 
 
@@ -76,6 +99,8 @@ def test_efficiency():
     assert score_efficiency(1000, 1000) == 0.5            # at budget
     assert score_efficiency(2000, 1000) == 0.0            # at 2x budget
     assert score_efficiency(3000, 1000) == 0.0            # beyond
+    assert score_efficiency(1001, 1000) < 0.5             # continuous at budget
+    assert score_efficiency(1500, 1000) == 0.25
     assert score_efficiency(500, None) == 1.0             # no budget -> neutral
     print("  efficiency OK")
 

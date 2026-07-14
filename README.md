@@ -9,7 +9,7 @@ dependency graphs—before measuring evidence acquisition and answer correctness
 - **Dataset:** 1,151 atomic tasks from 100 Workspace-Bench-Lite source tasks
 - **Surfaces:** RAG, Table, Graph, and cross-surface combinations
 - **Evaluation:** Route, Evidence, Answer, Efficiency, and Aggregate scores
-- **Experiments:** 4 backbones × 5 agent settings = 23,020 released trajectories
+- **Experiments:** 4 backbones × 6 agent settings = 27,624 released trajectories
 - **Human audit:** 3 annotators on a stratified 200-task sample
 
 The complete data release and official trajectories are distributed separately
@@ -27,7 +27,7 @@ and answer-synthesis failures.
 ```text
 worksurface/   Surface construction, task derivation, quality control
 scoring/       Route, Evidence, Answer, Efficiency, and Safety scorers
-runner/        Tool environment and S1–S5 agent harness
+runner/        Tool environment and S1–S6 agent harness
 results/       Analysis and release-construction scripts (generated files ignored)
 scripts/       Source download, provenance lock, budgets, HF release builder
 schemas/       JSON Schema for benchmark tasks
@@ -117,10 +117,12 @@ the tools → trace → scorer path without an API key.
 | S2 | Always RAG | Document retrieval only |
 | S3 | Single-surface router | Select one surface before answering |
 | S4 | ReAct all-tools | Explore RAG, Table, and Graph tools |
-| S5 | Gold-surface guided | Diagnostic control with gold surface labels |
+| S5 | Gold-constrained | Gold labels with only the required tools exposed |
+| S6 | Gold-hint/all | Gold labels while all tools remain exposed |
 
-S5 is a control condition rather than a deployable baseline: tool execution,
-evidence acquisition, and answer synthesis remain model-controlled.
+S6 isolates the effect of supplying surface information; S6→S5 isolates the
+additional effect of removing irrelevant tools. Tool execution, evidence
+acquisition, and answer synthesis remain model-controlled in both conditions.
 
 ## Results at a glance
 

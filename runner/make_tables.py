@@ -27,8 +27,8 @@ SUBSCORES = [("route_precision", "Route-P"), ("route_recall", "Route-R"),
              ("answer", "Answer"), ("efficiency", "Eff."),
              ("aggregate", "Agg.")]
 TASK_TYPES = ["rag_only", "table_only", "graph_only", "cross_surface"]
-# per-surface Answer table columns (adds an abstain calibration column)
-SURFACE_COLS = ["rag_only", "table_only", "graph_only", "cross_surface", "abstain"]
+# Per-task-type Answer table columns. Abstain is absent from the final release.
+SURFACE_COLS = ["rag_only", "table_only", "graph_only", "cross_surface"]
 
 
 def _parse_name(path: str):
@@ -44,7 +44,8 @@ def _fmt(v):
 
 def load_runs(runs_dir: str):
     rows = []
-    for p in sorted(glob.glob(os.path.join(runs_dir, "*.scored.json"))):
+    for p in sorted(glob.glob(os.path.join(runs_dir, "**", "*.scored.json"),
+                              recursive=True)):
         rep = json.load(open(p))
         setting, model = _parse_name(p)
         rows.append({"setting": setting, "model": model, "report": rep})
@@ -95,7 +96,8 @@ MODEL_LABEL = {
     "gemini-3.1-pro-preview": "Gemini-3.1-Pro",
 }
 SETTING_LABEL = {"S1": "No-tool", "S2": "Always-RAG", "S3": "Naive-router",
-                 "S4": "ReAct-all", "S5": "Gold-guided"}
+                 "S4": "ReAct-all", "S5": "Gold-constrained",
+                 "S6": "Gold-hint/all"}
 
 
 def _rows_by_model(rows):
@@ -108,7 +110,7 @@ def _rows_by_model(rows):
 def _emit_grouped_latex(rows, col_keys, col_labels, cell_fn, caption, label,
                         placeholder_models=None, highlight_guidance=False):
     """model-grouped booktabs table: each model is a \\multirow block over its
-    five settings. ``placeholder_models`` are listed with em-dash rows even if
+    six settings. ``placeholder_models`` are listed with em-dash rows even if
     they have no runs yet. Per (setting, column) the best value across models
     is bolded so the leaderboard is scannable."""
     by = _rows_by_model(rows)
@@ -117,7 +119,7 @@ def _emit_grouped_latex(rows, col_keys, col_labels, cell_fn, caption, label,
         if m not in models:
             models.append(m)
 
-    settings = ["S1", "S2", "S3", "S4", "S5"]
+    settings = ["S1", "S2", "S3", "S4", "S5", "S6"]
 
     # First pass: collect raw cells so we can identify per-(setting, col) maxima.
     raw = {}   # raw[m][s] = list[str] of cells for that row
@@ -150,9 +152,9 @@ def _emit_grouped_latex(rows, col_keys, col_labels, cell_fn, caption, label,
     out = []
     out.append("\\begin{table*}[t]")
     out.append("\\centering\\small")
-    out.append("\\renewcommand{\\arraystretch}{1.08}")
+    out.append("\\renewcommand{\\arraystretch}{0.98}")
     out.append("\\setlength{\\tabcolsep}{4.2pt}")
-    out.append("\\begin{tabular*}{\\textwidth}{@{\\extracolsep{\\fill}}ll"
+    out.append("\\begin{tabular*}{\\textwidth}{@{\\extracolsep{\\fill}}cl"
                + "c" * len(col_keys) + "}")
     out.append("\\toprule")
     if label == "tab:main":
@@ -183,15 +185,12 @@ def _emit_grouped_latex(rows, col_keys, col_labels, cell_fn, caption, label,
                     bold_cells.append(f"\\textbf{{{c}}}")
                 else:
                     bold_cells.append(c)
-            # Avoid multirow: colortbl paints highlighted cells after spanning
-            # text and can occlude model labels. Group rules preserve the same
-            # visual hierarchy without relying on overlapping TeX boxes.
-            label_cell = MODEL_LABEL.get(m, m) if si == 0 else ""
+            label_cell = (f"\\multirow{{{len(settings)}}}{{*}}"
+                          f"{{{MODEL_LABEL.get(m, m)}}}" if si == 0 else "")
             setting_cell = SETTING_LABEL[s]
-            if s == "S5" and highlight_guidance:
-                box = "gbox" if label == "tab:persurface" else "gcell"
-                setting_cell = f"\\{box}{{{setting_cell}}}"
-                bold_cells = [f"\\{box}{{{cell}}}" for cell in bold_cells]
+            if s in ("S5", "S6") and highlight_guidance:
+                setting_cell = f"\\gcell{{{setting_cell}}}"
+                bold_cells = [f"\\gcell{{{cell}}}" for cell in bold_cells]
             out.append(f"{label_cell} & {setting_cell} & " +
                        " & ".join(bold_cells) + " \\\\")
         if mi < len(models) - 1:
@@ -229,15 +228,11 @@ def build_table3_latex(rows, placeholder_models=None):
     return _emit_grouped_latex(
         rows, [k for k, _ in SUBSCORES], [lbl for _, lbl in SUBSCORES],
         _main_cell,
-        "Main results across four models and five agent settings on all "
-        "1,151 tasks; all "
-        "values are percentages. Route-F1, Evidence, Answer, and Efficiency "
-        "contribute to Agg. as defined in Section 4; Safety is NA for the "
-        "released task set and is therefore omitted. For No-tool, Route is "
-        "displayed as an em dash but scored as zero in Agg. whenever a "
-        "surface is required. Shading denotes Gold-guided; bold denotes the "
-        "best setting within each model. All 23,020 retained trajectories "
-        "completed without API or protocol errors.",
+        "Main results (\\%) across four models, six settings, and 1,151 tasks. "
+        "Route-F1, Evidence, Answer, and Efficiency form Agg. (Section 4). "
+        "No-tool Route is unavailable and scored zero. Shading marks the two "
+        "gold-surface conditions; bold marks the within-model best. All "
+        "27,624 retained trajectories are protocol-error-free.",
         "tab:main", placeholder_models, highlight_guidance=True)
 
 
@@ -245,9 +240,8 @@ def build_table4_latex(rows, placeholder_models=None):
     return _emit_grouped_latex(
         rows, SURFACE_COLS, ["rag", "table", "graph", "cross"],
         _persurface_cell,
-        "Mean Answer score (\\%) by task type across four models on all 1,151 "
-        "tasks. Shading denotes Gold-guided; bold denotes the best setting "
-        "within each model.",
+        "Mean Answer (\\%) by task type. Shading marks the two gold-surface "
+        "conditions; bold marks the within-model best.",
         "tab:persurface", placeholder_models, highlight_guidance=True)
 
 
@@ -268,6 +262,10 @@ def main():
     for name, tbl in (("table3_main_results", t3), ("table4_per_surface", t4)):
         write_csv(tbl, os.path.join(args.out, name + ".csv"))
         write_md(tbl, os.path.join(args.out, name + ".md"))
+    with open(os.path.join(args.out, "table3_main_results.tex"), "w") as f:
+        f.write(build_table3_latex(rows))
+    with open(os.path.join(args.out, "table4_per_surface.tex"), "w") as f:
+        f.write(build_table4_latex(rows))
 
     print(f"[tables] {len(rows)} runs -> {args.out}")
     print("\nTable 3 — Main results:")

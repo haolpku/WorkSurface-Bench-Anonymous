@@ -62,6 +62,7 @@ class APIBackbone:
         self.name = model
         self.api_base = api_base or os.environ.get("WSB_API_BASE")
         self.api_key = api_key or os.environ.get("WSB_API_KEY")
+        self.timeout = int(os.environ.get("WSB_API_TIMEOUT", "300"))
         if not (self.api_base and self.api_key):
             raise RuntimeError("APIBackbone needs WSB_API_BASE and WSB_API_KEY")
         self.last_usage = {"input": 0, "output": 0}
@@ -87,7 +88,7 @@ class APIBackbone:
             headers={"Authorization": f"Bearer {self.api_key}",
                      "Content-Type": "application/json"},
         )
-        with urllib.request.urlopen(req, timeout=180) as resp:
+        with urllib.request.urlopen(req, timeout=self.timeout) as resp:
             data = json.load(resp)
         usage = data.get("usage", {})
         self.last_usage = {"input": usage.get("prompt_tokens", 0),

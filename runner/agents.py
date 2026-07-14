@@ -1,4 +1,4 @@
-"""The five agent settings (paper_spec §3.1) + run driver.
+"""The six agent settings (paper_spec §3.1) + run driver.
 
   S1 No-tool      answer directly, no tools. Answer lower bound + closed-book
                   answerability diagnostic. Route is undefined (never scored).
@@ -8,8 +8,9 @@
                   Tests routing when constrained to a single choice.
   S4 ReAct-all    all tools exposed; the agent explores freely. The realistic
                   setting and the source of the failure-mode taxonomy.
-  S5 Gold-guided  given gold required_surfaces; tool use and answering remain
-                  model-controlled.
+  S5 Gold-constr.  given gold required_surfaces and restricted to their tools.
+  S6 Gold-hint     given gold required_surfaces as a hint while all tools stay
+                  exposed, separating surface information from tool removal.
 
 Each agent returns a ``trace`` dict in the shape scoring.score_run expects:
 chosen_surfaces, rag_files, tables, graph_nodes, answer, total_tokens,
@@ -183,12 +184,28 @@ def run_s5_gold_guided(task, backbone, tools):
                      answer=ans)
 
 
+def run_s6_gold_hint_all_tools(task, backbone, tools):
+    # Gold surface names are supplied as information, but unlike S5 no tools
+    # are removed.  This isolates the benefit of the hint from constrained
+    # action space.
+    surfaces = task.get("required_surfaces") or ["rag"]
+    if isinstance(backbone, MockBackbone):
+        _mock_exercise(tools, task, surfaces)
+        return _finalize(tools, backbone, task,
+                         chosen=sorted(tools.surfaces_used))
+    ans = react_loop(task, backbone, tools, allowed_surfaces=ALL_SURFACES,
+                     surface_hint=surfaces)
+    return _finalize(tools, backbone, task,
+                     chosen=sorted(tools.surfaces_used), answer=ans)
+
+
 SETTINGS = {
     "S1": run_s1_no_tool,
     "S2": run_s2_always_rag,
     "S3": run_s3_naive_router,
     "S4": run_s4_react_all,
     "S5": run_s5_gold_guided,
+    "S6": run_s6_gold_hint_all_tools,
 }
 
 

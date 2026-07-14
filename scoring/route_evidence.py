@@ -17,7 +17,8 @@ surface), so a task with 2 table + 1 rag gold items weights table 2:1.
 
   rag    a gold doc/span is hit if the agent read/cited the source file
   table  a gold table is hit if the agent queried that view
-  graph  a gold graph_path node is hit if the agent traversed/returned it
+  graph  a path item is hit only if its terminal evidence node was returned;
+         complete-set items require every verified member to be returned
 
 The scorer takes the agent's tool trace (list of {tool, args, surface, ...})
 and the gold_evidence; it is trace-format-agnostic via small accessor lambdas
@@ -78,8 +79,20 @@ def _table_hit(ev, trace_tables) -> bool:
 
 def _graph_hit(ev, trace_nodes) -> bool:
     path = ev.get("graph_path") or []
-    nodes = [p for p in path]
-    return any(n in trace_nodes for n in nodes) if nodes else bool(trace_nodes)
+    if path:
+        # The first path element is commonly the task entry node and is given
+        # to every graph-capable agent.  Crediting any path node therefore
+        # made a single call to that entry node look like correct evidence.
+        # Require the terminal evidence entity instead.
+        return path[-1] in trace_nodes
+    complete = ev.get("verified_complete_set") or []
+    if complete:
+        # Gold complete sets use bare filenames whereas traces may prefix them
+        # with ``t<id>::``.  Every verified member must be present.
+        return all(any(member == node or node.endswith("::" + member)
+                       for node in trace_nodes)
+                   for member in complete)
+    return False
 
 
 def score_evidence(gold_evidence, trace) -> EvidenceResult:

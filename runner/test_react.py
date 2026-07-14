@@ -90,7 +90,7 @@ def main():
 
     print("Validating real ReAct path with a scripted OpenAI-style backbone:\n")
     for ttype, task in by_type.items():
-        for setting in ("S3", "S4", "S5"):
+        for setting in ("S3", "S4", "S5", "S6"):
             bb = ScriptedBackbone(task)
             trace = run_task(task, setting, bb, "data/worksurface_lite")
             scored = score_task(task, trace)

@@ -24,7 +24,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--model", required=True)
     ap.add_argument("--settings", nargs="+",
-                    default=["S1", "S2", "S3", "S4", "S5"])
+                    default=["S1", "S2", "S3", "S4", "S5", "S6"])
     ap.add_argument("--concurrency", type=int, default=15)
     ap.add_argument("--runs-dir", default="runs")
     ap.add_argument("--tasks", default=os.path.join(OUT_DIR, "tasks", "tasks.jsonl"))

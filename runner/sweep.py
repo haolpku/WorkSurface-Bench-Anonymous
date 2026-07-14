@@ -6,10 +6,10 @@ the paper tables. Convenience wrapper around runner.run_bench.
 
     # subset pilot: all settings, one real model, 50 tasks
     WSB_API_BASE=... WSB_API_KEY=... \
-    python -m runner.sweep --model gpt-4o-mini --settings S1 S2 S3 S4 S5 --limit 50
+    python -m runner.sweep --model gpt-4o-mini --settings S1 S2 S3 S4 S5 S6 --limit 50
 
     # full single model
-    python -m runner.sweep --model gpt-4o-mini --settings S1 S2 S3 S4 S5
+    python -m runner.sweep --model gpt-4o-mini --settings S1 S2 S3 S4 S5 S6
 
 Writes runs/<setting>_<model>.jsonl + .scored.json for each, then
 runs/tables/table3_main_results.md + table4_per_surface.md.
@@ -30,7 +30,7 @@ from .backbone import make_backbone
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--model", default="mock")
-    ap.add_argument("--settings", nargs="+", default=["S1", "S2", "S3", "S4", "S5"],
+    ap.add_argument("--settings", nargs="+", default=["S1", "S2", "S3", "S4", "S5", "S6"],
                     choices=list(SETTINGS))
     ap.add_argument("--tasks", default=os.path.join(OUT_DIR, "tasks", "tasks.jsonl"))
     ap.add_argument("--data-root", default=OUT_DIR)

@@ -2,11 +2,11 @@
 import json,glob,os,statistics
 from collections import defaultdict,Counter
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1];runs=ROOT/'runs_final1151_flat';tasks=list(map(json.loads,open(ROOT/'data/worksurface_lite/tasks/tasks_final_1151.jsonl')))
+ROOT=Path(__file__).resolve().parents[1];runs=ROOT/'runs_final1151';tasks=list(map(json.loads,open(ROOT/'data/worksurface_lite/tasks/tasks_final_1151.jsonl')))
 reports={}
-for p in glob.glob(str(runs/'S*.scored.json')):
+for p in glob.glob(str(runs/'*'/'S*.scored.json')):
  n=Path(p).name.replace('.scored.json','');setting,model=n.split('_',1);reports[(setting,model)]=json.load(open(p))
-models=['gpt-4o-mini','deepseek-v4-pro','gemini-3.1-pro-preview','gpt-5.5'];settings=['S2','S3','S4','S5'];types=['rag_only','table_only','graph_only','cross_surface']
+models=['gpt-4o-mini','deepseek-v4-pro','gemini-3.1-pro-preview','gpt-5.5'];settings=['S2','S3','S4','S5','S6'];types=['rag_only','table_only','graph_only','cross_surface']
 x=[];y=[];labels=[]
 for s in settings:
  for m in models:
@@ -23,7 +23,7 @@ def ranks(a):
  return r
 rx,ry=ranks(x),ranks(y);mx,my=statistics.mean(rx),statistics.mean(ry);rho=sum((a-mx)*(b-my) for a,b in zip(rx,ry))/(sum((a-mx)**2 for a in rx)*sum((b-my)**2 for b in ry))**.5
 g={'models':models}
-for s,k in [('S3','S3_naive'),('S4','S4_react'),('S5','S5_guided')]:g[k]=[reports[(s,m)]['overall']['answer'] for m in models]
+for s,k in [('S3','S3_naive'),('S4','S4_react'),('S6','S6_hint'),('S5','S5_constrained')]:g[k]=[reports[(s,m)]['overall']['answer'] for m in models]
 lines={s:[statistics.mean(reports[(s,m)]['by_task_type'][t]['answer'] for m in models) for t in types] for s in settings}
 data={'scatter_3a':{'x_route_f1':x,'y_answer':y,'labels':labels,'spearman_rho':rho},'guidance_3b':g,'per_surface_3c':{'lines':lines}}
 (ROOT/'results/figure3_data.json').write_text(json.dumps(data,indent=2))

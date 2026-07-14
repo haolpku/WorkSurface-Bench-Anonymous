@@ -9,9 +9,11 @@ from matplotlib.ticker import PercentFormatter
 HERE = os.path.dirname(__file__)
 d = json.load(open(os.path.join(HERE, "figure3_data.json")))
 
-COLORS = {"S2": "#56B4E9", "S3": "#009E73", "S4": "#E69F00", "S5": "#7A5195"}
-LABELS = {"S2": "Always-RAG", "S3": "Naive-router", "S4": "ReAct-all", "S5": "Gold-guided"}
-MARKERS = {"S2": "o", "S3": "s", "S4": "^", "S5": "D"}
+COLORS = {"S2": "#56B4E9", "S3": "#009E73", "S4": "#E69F00",
+          "S5": "#7A5195", "S6": "#D55E00"}
+LABELS = {"S2": "Always-RAG", "S3": "Naive-router", "S4": "ReAct-all",
+          "S5": "Gold-constrained", "S6": "Gold-hint/all"}
+MARKERS = {"S2": "o", "S3": "s", "S4": "^", "S5": "D", "S6": "P"}
 
 plt.rcParams.update({
     "font.family": "serif", "font.serif": ["Times New Roman"],
@@ -25,7 +27,7 @@ fig, ax = plt.subplots(1, 3, figsize=(14.2, 3.8), constrained_layout=True)
 # (a) Encode the agent setting explicitly rather than drawing an undifferentiated cloud.
 a = d["scatter_3a"]
 settings = [label.split(":", 1)[0] for label in a["labels"]]
-for setting in ("S2", "S3", "S4", "S5"):
+for setting in ("S2", "S3", "S4", "S5", "S6"):
     idx = [i for i, value in enumerate(settings) if value == setting]
     ax[0].scatter([a["x_route_f1"][i] for i in idx],
                   [a["y_answer"][i] for i in idx], s=44,
@@ -45,24 +47,25 @@ model_order = ["gpt-4o-mini", "deepseek-v4-pro",
                "gemini-3.1-pro-preview", "gpt-5.5"]
 order = [g["models"].index(m) for m in model_order if m in g["models"]]
 ordered_models = [g["models"][i] for i in order]
-x = np.arange(len(ordered_models)); width = 0.24
+x = np.arange(len(ordered_models)); width = 0.19
 series = [("S3_naive", "S3 Naive", COLORS["S3"], "//"),
           ("S4_react", "S4 ReAct", COLORS["S4"], ".."),
-          ("S5_guided", "S5 Gold-guided", COLORS["S5"], "")]
-for offset, (key, label, color, hatch) in enumerate(series, -1):
+          ("S6_hint", "S6 Gold-hint/all", COLORS["S6"], "xx"),
+          ("S5_constrained", "S5 Gold-constr.", COLORS["S5"], "")]
+for offset, (key, label, color, hatch) in zip((-1.5, -.5, .5, 1.5), series):
     ax[1].bar(x + offset * width, [(g[key][i] or 0) for i in order], width,
               color=color, label=label, hatch=hatch, edgecolor="white", linewidth=0.5)
 ax[1].set_xticks(x, [short.get(m, m) for m in ordered_models], rotation=18, ha="right")
-ax[1].set(ylabel="Answer score", title="(b) Gold-surface intervention", ylim=(0, 0.82))
+ax[1].set(ylabel="Answer score", title="(b) Hint and tool restriction", ylim=(0, 0.9))
 ax[1].set_yticks(np.arange(0, 0.71, 0.1))
-ax[1].legend(loc="upper center", frameon=False, ncol=3,
-             columnspacing=0.8, handletextpad=0.3)
+ax[1].legend(loc="upper center", frameon=False, ncol=2,
+             columnspacing=0.7, handletextpad=0.25)
 
 # (c) Color and line style jointly encode the setting for grayscale robustness.
 c = d["per_surface_3c"]
 surface_labels = ["RAG", "Table", "Graph", "Cross"]
-styles = {"S2": ":", "S3": "--", "S4": "-", "S5": "-."}
-for setting in ("S2", "S3", "S4", "S5"):
+styles = {"S2": ":", "S3": "--", "S4": "-", "S5": "-.", "S6": (0, (3, 1, 1, 1))}
+for setting in ("S2", "S3", "S4", "S5", "S6"):
     vals = c["lines"].get(setting)
     if vals:
         ax[2].plot(surface_labels, vals, marker=MARKERS[setting], markersize=7,
