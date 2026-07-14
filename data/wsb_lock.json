@@ -1,0 +1,968 @@
+{
+  "wsb_repo": "Workspace-Bench/Workspace-Bench-Lite",
+  "wsb_commit": "60b08b1cc2e8054afbc3ca2160d37876b4f0765c",
+  "downloaded_at": "2026-07-09T03:55:37.990966+00:00",
+  "split": "task_lite_clean_en",
+  "task_id_to_file_hashes": {
+    "3": {
+      "dependency_item_34.md": "sha256:94377f59a90a1641fdc475746c5ed2415c079ac1250266a5905e31742ba0e7b9",
+      "dependency_item_35.md": "sha256:2a4aca3914687166264dd1d571a371419f9b1fe9c432c02913e3d755f0912329",
+      "dependency_item_1.md": "sha256:b4dcea658411e2642378b61094eb5eec14f039e3f926b06eaa073765e53e6e46",
+      "dependency_item_2.md": "sha256:f4ea93639821e7ad1cc78dfb18514443ae1cf4360d073f2075e14d5b347dadd6",
+      "dependency_item_3.md": "sha256:f56fc8229445fce513685b6fcd0e9fb6d90fb2f06caf0676edf65e30bec2939e",
+      "dependency_item_4.md": "sha256:276353c7c2992d73f618214d5d979d7c2c8b86390cdb7b026fa216e212ddf01c",
+      "dependency_item_5.md": "sha256:7752d7e8b9ef5d5464e3d80d9d015f7221ad45dd7adb880cf8fcfc66b558be76",
+      "dependency_item_6.md": "sha256:304845eab6118a514840ac1fe2bf0807aac60600a02076fd76d2696e0bd5e7b9",
+      "dependency_item_7.md": "sha256:fed3a2505fb1a12ffec5ec12f407c6e4ffc4a0a8b3081602a8c1f49f9594c5ac",
+      "dependency_item_8.md": "sha256:17a20d825bd73dd86ab578e06f04492e78453b720f17637465aafaa5b0f14e10",
+      "dependency_item_9.md": "sha256:f3c784677d0e73c85a3152ae2204d2a94ad6aaec2eb0feac2e59a3cde497589d",
+      "dependency_item_10.md": "sha256:5fabb3ea672c7cf65d7eb6195a3413054dca578acd17d7286ba3ca9018141214",
+      "dependency_item_11.md": "sha256:51466b0a76744f255703f70f43835de03c13594d712a1ac80406643c8a29025a",
+      "dependency_item_12.md": "sha256:04f836c745c4cfd04b88fc080ed98ca29b4c630c70e6c1597df0776225ffc375",
+      "dependency_item_13.md": "sha256:951ce385af20d8aaf727d09c04521d775824acf6d50e6842f3daaf9a12517fa1",
+      "dependency_item_14.md": "sha256:ed8c3753908766cbc1e6dbf4f4fee62d5405301a8d29a1d2fe12a34d46ab359b",
+      "dependency_item_15.md": "sha256:9fa43e974113c5f65c479b92933b8aecb47c2d2bfdeae78843537a4c5d3fcad0",
+      "dependency_item_16.md": "sha256:2b971617b48cc411f11d1c96c413faa6716b77882cc64715b52b4c8cd953935c",
+      "dependency_item_17.md": "sha256:9164a0aa1f6f02f22d33e979e54bcc81a9a94cd06f706626a5fcc983b34411b9",
+      "dependency_item_18.md": "sha256:89e2601d64578cffadb55f1f0fa449655f6f244e9ee69f41eab6b4963ead4e31",
+      "dependency_item_19.md": "sha256:f1ff9eb475b64bb528dcfeb37b9e54a7b987d1a9fb05c5e965bf4e16e596baea",
+      "dependency_item_20.md": "sha256:3eaf4faafe81b323aa6522ad27cda60e2045aa6899f7e3f9a7dc77b37da75782",
+      "dependency_item_21.md": "sha256:2b75b913b582c113882c495051973d1d4159d769d23d06114a8ce5f769cfd4de",
+      "dependency_item_22.md": "sha256:184243a922c2cfdf713bb2fc1d7f1df3ab611092c55246264987abe9d110f640",
+      "dependency_item_23.md": "sha256:d6496c728d325af89b2fcf9794803cf259849cfd6c6ea3377ec9675202c5816b",
+      "dependency_item_24.md": "sha256:cc712723ab8b65be6d97914d8904ca00a1df0b3810a743fb99edca3ab5c4c4f5",
+      "dependency_item_25.md": "sha256:e9a62c781e8c182619d42c212396e119a4b01a3a59107163f3d3835d1a157fef",
+      "dependency_item_26.md": "sha256:c3f349db3afd6ba17aee2dfb94326f6778b72ec82cea11ede2445c29e9be7635",
+      "dependency_item_27.md": "sha256:44e714c5a3fd556a45f741f23f61ccbd4d6d4bafdbb885655549e5a3da6ab711",
+      "dependency_item_28.md": "sha256:1244523870a37360f9e74df3587b0f14643c79818aff5c39e169a9adec62ecc5",
+      "dependency_item_29.md": "sha256:67540a13a690c38ee826b703120e293e8b6bc1049cdab0bc5e65a22ca8e4297b",
+      "dependency_item_30.md": "sha256:2f0d7fafd0ea423f44d569c815ca94a021e9c9c9622e509040299b4667bd1640",
+      "dependency_item_31.md": "sha256:1cb5fd05904f6dcd0d571fd9e9a8330d20efc3476583f95c56b02d6987083d94",
+      "dependency_item_32.md": "sha256:b37109944bf5875162140fde53a614dfbbbb2c71562152b77f2a93d9a2d20ea8",
+      "dependency_item_33.md": "sha256:0b0efb4abe48b14e55626a6134712b27ca4c93507ff09475923e0dad73f840d9",
+      "package_config.json": "sha256:29a781edc34ae272d1746442429d2ea6ead90c3c6cfa24dcf025f2c5fedfd174",
+      "project_object_model.xml": "sha256:5cb7f317de0f5bc73e35ed6a469032cc002e81b258cb468e7094e34d2def47c0"
+    },
+    "7": {
+      "2024-12-project-kickoff-meeting-minutes.md": "sha256:85d60da0200fa8ae8b2b916a758dd78522375e49da4240ed4c664c79a1ada8ea",
+      "2025-01-technical-review-meeting-minutes.md": "sha256:85b2d5df36357d0fb0722718e97b9b0267b04a9613a39c4f50fa6f53f5b055ed",
+      "project_requirements_document.md": "sha256:dc05897f340252415b6a74894f016f62a2332d33fa9f82dda50786535846ae0f"
+    },
+    "13": {
+      "3.pptx": "sha256:a4765e075d6dab40aca9bd73bd25672b7a60f589bca7d97b1c21b2b5ccc30846",
+      "4.pptx": "sha256:8a4f1042a893cc35e385bca916f701ca6e7117be0fb7e9a970f633791f3aaec8",
+      "1.pptx": "sha256:0c7675c8acd393b7475e7783a976d4705a4fa57f09b2b62ead38233d41f103c3",
+      "2.pptx": "sha256:7a61306507f3b648cc0a0e8e872232d1a04a1a249b7f872d89aa7dbc2c9d79f4"
+    },
+    "15": {
+      "4-financial-table-income-expense-dashboard.xlsx": "sha256:9cb7f357cb7371253f070eaebec27df43b39a7df7b46b8ef56c064604ed77a36",
+      "6-financial-table-income-and-expense-data-visual-charts.xlsx": "sha256:9e56bfd7f0fe42d09fe8c57ce710716086d6fe45542bffd38b164a5f2b2045d7",
+      "5-financial-table-income-expense-profit-statement_visual-charts_.xlsx": "sha256:a4cdbca12c3e6387d63ba5cb5552845653f1f70d282d53443ddd88f8bf6a55a3"
+    },
+    "23": {
+      "supplier-list.csv": "sha256:a17b1a579e58f18b276423a05a56591151ad33f0765cac03d1f5bc2fb4ce8a39",
+      "stocktaking-report.txt": "sha256:3178caf3cd77f6b03daa7bac638c19e0c7d336e7d56eb7c3b5ab90443e610598",
+      "2024.txt": "sha256:be6a21b6e8ee9ccb0ae20922fa84d11902aadc12ed849820003e6c2c17f2ded0",
+      "purchase-order.txt": "sha256:9f705f2297bfca5ad126f089f31102e932288f2ada35281e5f4b5bbfb67af404",
+      "logistics-statistics-table.csv": "sha256:71a27d161bfaf2a008ba9dfbb38c8b46c8abc565ea89825334fe830b346359b6"
+    },
+    "33": {
+      "1-2-2023.xlsx": "sha256:9f1980f4079c9af5f6a1b6aaf62834b653e015942b8fd36cd99c3c432570b6c4",
+      "1-3-2023.xlsx": "sha256:ac84bad709c531aebdcfb7d91aaa142d2a979fb08cb136ff2deda6fe9f7bee86",
+      "1-12-2023-(-).xlsx": "sha256:e8c2b7310ef2221970ca728f3274272a9ee31e85652248ddb3c25dc267b74bea"
+    },
+    "35": {
+      "7-year-end-sales-income-expense-visual-dashboard-1.xlsx": "sha256:ca69a83b5a010f1aebbec396e5ba686ba87522ff2f9c3c8c79997ca7ca524770",
+      "13-annual-salary-budget-table_visual-dashboard_1.xlsx": "sha256:ce3f2432e59df4b0e2aa717a76675d617134ae3d0f78d3950eaf54398568de1d",
+      "1-financial-table-income-expense-data-dashboard.xlsx": "sha256:2ad8a805de645496dedde2b080ac514e60d95ce638fc8b005703ddcd92b5fc4b",
+      "2-tech-style-reimbursement-analysis-tableExceltemplate.xlsx": "sha256:213bd44cb99e99f22b926b8a79dd1a3380a9082f494facde5b40ab81b91ecba2"
+    },
+    "37": {
+      "5-company-personnel-structure-visual-dashboard-1.xlsx": "sha256:37565ed0d8468bd23e4f569cf6b2e0bfe5e515212c774430f0fbec6525fcaa9b",
+      "6-personnel-mobility-analysis-chart-visual-charts.xlsx": "sha256:7bf61d81a09b93b86851aa8c53db0a022114faf23f6f27379e9e652d5b9213c1",
+      "1-human-resources-decision-analysis-dashboard-1.xlsx": "sha256:fc96b30653c8f5f2dbb3fc4ceb01495d8a3b1ad43a0b82706c59c634114f8f85",
+      "2-KPIkpi-analysis-performance-evaluation-visual-dashboard.xlsx": "sha256:9f9eee80fcece91b63ee7b772b5d6181885ada7873adffbe1357c9f1d135d7c6"
+    },
+    "38": {
+      "15-annual-onboarding-and-offboarding-statistics.xlsx": "sha256:e56c321e7d08b89826e56faeb4bae7f9cf1b814a0cab2bdc29107838defe881f",
+      "12-human-resources-employee-information-management-system.xlsx": "sha256:140d0a515b0f3a0d8e2c5da6fdb26b811e748c81873bf89bd074dc3d143a5a09",
+      "10-recruitment-employee-statistics-analysis-table.xlsx": "sha256:b885fad252d245faa1c8252b213a48f848d326bdf7428b7a3ce43ee9754c6d71"
+    },
+    "44": {
+      "development-task-2.xlsx": "sha256:4a0817fa1f895df985b47a675385dd5a0d8de9031191b8ae49bddba56094380a",
+      "development-task-3.xlsx": "sha256:8e42c757ed34afe202a496c277bccf2d433cccda0184136f437ff4a66f282f8b",
+      "development-task-list.xlsx": "sha256:bed53cb5a95feb848059f57defb7e7c83b4b2d1ab18d3d1110591f1f81ed655f"
+    },
+    "45": {
+      "3-financial-department-expense-dynamic-analysis.xlsx": "sha256:f343b4060b76ad2e6ff9cb716b149f45fd441c85dc20605e424f2599c001e11d",
+      "4-financial-annual-revenue-statistics-visual-charts.xlsx": "sha256:e205d1a4c49c43daa811a43218c7007d2b2bcea0301ae9f09d61fcdcadd3a320",
+      "5-product-cost-profit-comparative-analysis.xlsx": "sha256:a8990663ec12bc98c7b0d4ff7f8671daf5cc7427d28a3b8b7ea8fa7e9f898c36",
+      "6-product-sales-analysis-dashboard(chart-linkage_selected-analysis).xlsx": "sha256:3501a7bc673db54af6933ce75667beff7e41dcc746992be11bc85f279137396d"
+    },
+    "47": {
+      "employee-file.xlsx": "sha256:bbfdf172722a9f3ae4747c2d09e73e56a4dba07dabd2f9f1eef702f812517a72"
+    },
+    "53": {
+      "interaction_document_6.txt": "sha256:a711640c140cacf5785b90b5dd863b64feb06e7e738a1db3be24c857733c08af",
+      "interaction_document_8.txt": "sha256:da3e201326bcad7aca13b4643ef10a20a595d8356729805012b13f4ef793dffa",
+      "interaction_document_10.txt": "sha256:9053f8ad443499d11fd4eb998fc9f3438dc74ac5c7523d1a66c2d068f6c9cf27",
+      "interaction_document_13.txt": "sha256:20bfcecd67c1e00778c6913a59bb2650f18281673920429e0b4629b886179a39"
+    },
+    "54": {
+      "monthly_analysis_report_01.txt": "sha256:b8efeef799e0d788e4423efd7aac942bad4f98555a41c201b56d86ac1ca66340",
+      "monthly_analysis_report_02.txt": "sha256:e66511bb36406c7c68425ea5fedf08d21495d9d9833ee5a316c5c969b187f773",
+      "monthly_analysis_report_03.txt": "sha256:030f4a7ca851d7643f9bbc5ff33adee225172656b00fd31b01147a959c3452ea",
+      "monthly_analysis_report_04.txt": "sha256:e7402f254b6e2ee70e0ff8d08738e823b57ec8d4f98f9ae6cecbb6653dd8e6b0"
+    },
+    "55": {
+      "technical_solution_feature_compatibility.md": "sha256:41134c840334e2dd6cc25560c4cf4997f52c0e0c37bed5733007e503e3849b0f",
+      "technical_solution_message_handling_rules.md": "sha256:c038982a520f773db3e66fed1a6e40e1442783d35d6a979e514a6bcba0de83c3",
+      "technical_solution_key_handling_optimization.md": "sha256:b8d03f9fc6e9f996f63c7c7d6a4c1f727f3273221617b16c23dd123e98fdb5c3",
+      "technical_solution_process_optimization.md": "sha256:8f9091086dbb5f49d8fc59d7843969c6e7e1f0e0926113f8ee9b2268e8852d73"
+    },
+    "72": {
+      "emergency_response_1.txt": "sha256:2a6bdbd0bb11d27f6ec841cae8f5899c55dfe14ce2114505065c4a07dd3082bd",
+      "emergency_response_2.txt": "sha256:684a6a2554895a90584d3875a099f0cbe4c57023dce9776e3922b4faadf72839",
+      "emergency_response_3.txt": "sha256:9bedef52824e3da61b061835c94fa6fba101a5103ea725a67facc6adf0a35eb9",
+      "emergency_response_4.txt": "sha256:62f8d3c52b34e6cb05a0fc873227d924a2304577f810b9a3d6f05bb95df119e8"
+    },
+    "75": {
+      "various_minigames_1.txt": "sha256:9f124fb42cd09558fd00f2eaca2df09f71456c38fdba15aef4c3ca1bf9f57fce",
+      "various_minigames_2.txt": "sha256:d888ee6740b85d58ab1de61195c0d1f350427a0c425536b88c2a5878d3db04bf",
+      "various_minigames_3.txt": "sha256:d20cf50be087f6210ec22096e2cd1e49b6fbb1901e5f068fd4583fd517fc7106",
+      "various_minigames_4.txt": "sha256:f885961a8dfe33103fdfe6531af59c89c9d77bc35f4ae912fcee0286f3ff4cc5"
+    },
+    "78": {
+      "water_and_electricity_policy_1.txt": "sha256:46d1efae1d9058932f5cf6f56d075f1cb92f0880a05eb3ab3ce71e8b92da2a3f",
+      "water_and_electricity_policy_2.txt": "sha256:65cafdc7c64ec1ef37a308794b00a8bf2d2c89b985a17ca2760ce8135e4be1b0",
+      "water_and_electricity_policy_3.txt": "sha256:3a1502c006520c7e65f9026e8e57b1294a9817dc3a1695e8d5e2f282aa3c2cca",
+      "water_and_electricity_policy_4.txt": "sha256:1b70bdbe40e61742e7eff465ae3ae024c7018b4b52db114d1aff7cee7402262b"
+    },
+    "79": {
+      "air_conditioner_management_rules_1.txt": "sha256:ce5e35ec61df96086a22ca055698ae1d8be85e8b96959ad7fd0aea2ac10e3ff4",
+      "air_conditioner_management_rules_2.txt": "sha256:8e2837582bd79fc52719e7a1bf4cc87628b267e4f928826d39fa83201957015c",
+      "air_conditioner_management_rules_3.txt": "sha256:a645c61d64eef8846d60c74be68385c1d4eb69ea887f9375a2c9a11b35185a1a",
+      "air_conditioner_management_rules_4.txt": "sha256:22991f4c314dc356d7b54881e43cf8c10132042a0d79dc28025086c427021ba7"
+    },
+    "83": {
+      "administrative_management_policy_1.txt": "sha256:15eb5ce0c7fa0e730dae4a8e3622648c6bddcf3ccf9c3606027d368db30135c7",
+      "administrative_management_policy_2.txt": "sha256:2f6afeb9f62b856bc589df68f74ae112974147d46bce734548ac11802b1b4bfd",
+      "administrative_management_policy_3.txt": "sha256:4bac8e436fdde12bec59ec996dbc5b81fb9f0977aacce2874c96ab0adcc9489f",
+      "administrative_management_policy_4.txt": "sha256:b4473e1879c893111a37135ebb6f3f94eb8e05ce02cdd3e3d88faedc830f6ffe"
+    },
+    "85": {
+      "business_travel_management_policy_1.txt": "sha256:8c063260fe76fd3b52c5eaef61a93f77ebe2637e331b005cdaf4b8b317997968",
+      "business_travel_management_policy_2.txt": "sha256:e6335574130a81d7620ed8800e00253f69f2f080b3814b6003689fcde201f046",
+      "business_travel_management_policy_3.txt": "sha256:fbf207d0b6e19d32237441d8abb43d9d9f9020edf57dbf4c2a8605280af53e87",
+      "business_travel_management_policy_4.txt": "sha256:ec8ea9867ff0ca08716acdc4fc3a10bbfcd030cf55567ca44e8859e3af51a90c"
+    },
+    "87": {
+      "vendor_management_policy_1.txt": "sha256:cee3387819500fae33b449fde4be4bcee052dd3a8b4e3dc0616f397d4e3e15c9",
+      "vendor_management_policy_2.txt": "sha256:abf312770845962e751ab032fdc4ed96cfef84fb86c19e65f2a95fc6c8da03bb",
+      "vendor_management_policy_3.txt": "sha256:8ad22765d2948da88607d28a152f5d4f88bd4299d38b420046522934ae916a2c",
+      "vendor_management_policy_4.txt": "sha256:fe15b42f0f99d8c0e18cca051d62c191d5432b38caa381b982961f81d7a5706a"
+    },
+    "91": {
+      "employee_handbook_5.txt": "sha256:b94c6ea4f74c66186d84f4c0c4d4e358138913802b183f0858a43edb7035838c",
+      "employee_handbook_9.txt": "sha256:8d506c33e2d3f318f79340a9dca839849f4e8b6ad2c498de959b950c8b4bb961",
+      "employee_handbook_12.txt": "sha256:75bb4c58c142024e42827f01fe331428fbc2e439ac7e44dacb8fe6269042c391",
+      "employee_handbook_16.txt": "sha256:ec4ab33da2377de6d32d1db33f70cc6439619f89add906387776753f573cf849"
+    },
+    "92": {
+      "culture_development_management_5.txt": "sha256:bc6272eefadd7565084dc27b4599825f5390e34830e2e873066aced88967c1ad",
+      "culture_development_management_13.txt": "sha256:54de3ad920083605ac600e1c22719536c0185ce45794eecb78ca5ea9acae94d3",
+      "culture_development_management_19.txt": "sha256:2ac54a51d813bd745b55141756068e5c55f50990cd911b0a17495df971bfe889",
+      "culture_development_management_22.txt": "sha256:07a25672789238d0dd22185f696a399ab515bc21caad6c7beedfaae00b338c5d"
+    },
+    "94": {
+      "department_responsibility_management_2.txt": "sha256:0d50fb3c798966f2ce8708ba44ea1a848959314d350310197d01e9f1f7719539",
+      "department_responsibility_management_5.txt": "sha256:4c4f7e0302efbe89fca98f5b868fab06319e81db558bead9ad51e310e1e4154a",
+      "department_responsibility_management_8.txt": "sha256:e9ca4fffb4ffedb6d492303295c68d39ee07d886823e072dcd368424e7733376",
+      "department_responsibility_management_10.txt": "sha256:a7ffbc16ec736eb378a5ac8f210935966c16bc509934a339e00a4179882f69fc"
+    },
+    "95": {
+      "description_9.txt": "sha256:38fd2f4daa463f53ee872475e11501b56693a1ab98f8e62cf7e975d7f7c25095",
+      "description_12.txt": "sha256:671dc49b89996b7fc023fcdccba4116479895f5d01bf48b5fa300f75450e193b",
+      "description_15.txt": "sha256:bef38549509fc6e3dc7fd8975eaf057843641124872f402ddf351dffe2438e8b",
+      "description_22.txt": "sha256:6dc8329fc3a5dbd42d1d7aa6da692d98d87389066c2eff1e2aff39216cbeab73"
+    },
+    "100": {
+      "host_script_1.docx": "sha256:a60fb401fab41412f4abdea36d29b96088dd2223b64d68749ea430612ed6eb66",
+      "host_script_2.docx": "sha256:6d6ba67c92d11333359410da5ac681f56c47c73e9e242da52691aa245660a847",
+      "host_script_3.docx": "sha256:861e7d7a1eab2d5494270097b69c223df03e1f536304770aa650964bcada8577",
+      "host_script_4.docx": "sha256:dfe2d517ce3d77a90f7224e68b40ddef8172add7c350dee9dbe2a5dccb7a162d"
+    },
+    "102": {
+      "cost_reduction_and_efficiency_improvement_practical_plan_1.docx": "sha256:b26c1a99fb2df348f14da6a5b3f6183e1260b019a3e6d3811717cbc76c6344e8",
+      "cost_reduction_and_efficiency_improvement_practical_plan_2.docx": "sha256:f58f30678f05f58575c7c0b5813d924b50cde253a05efa4264a03008295b0c06",
+      "cost_reduction_and_efficiency_improvement_practical_plan_3.docx": "sha256:9954618ef9744626c0984a9f0811314cb37e38a6996acf5dede2ac8d9607416a",
+      "cost_reduction_and_efficiency_improvement_practical_plan_4.docx": "sha256:94154069a2c066fb4a5ea7992db306f3e93e87091c9656412f76eb94b58690b0"
+    },
+    "107": {
+      "product_info.csv": "sha256:a508c5c50582a72e741bfed176be8a1dcdf3cbd8914391c57110585c1e5cf8a7",
+      "segment_performance.csv": "sha256:f20fce60c51dc2bdfef77f7bf0b25dee4107c6f4e31cdd8f5e79fa3d01cf1dd2",
+      "Africa_orders.csv": "sha256:7c0b74268c52b75a9dc0d892e343855775ff2d1bdfe6ea544d77e343699db5bc",
+      "Asia_Pacific_orders.csv": "sha256:8c9aaeae2e3f340247f5c0472a5912cbe6d0d74e5c88e0b1d5efab4b5bfb8d5b",
+      "Europe_orders.csv": "sha256:b132f6dc46fe5894818bf4a85243a122b508a64e0e76b06f8e0834556070fc02",
+      "LATAM_orders.csv": "sha256:546ca18eff9190355307c935f95016bb21f94a07f13ded07b8bf8f4115c62a36",
+      "USCA_orders.csv": "sha256:a0931573a257d766a122bdbb0ad9007fb49bdec18ca25931ec43a5852faa775c",
+      "shipping_by_mode.csv": "sha256:1922a7d1f651bf42c1ab05275b364a6669d9dd08c6f6c2adf106982d031336eb",
+      "priority_codebook.txt": "sha256:5033d8d25338cd67fd93c72e13b7b036cdaab9bc102325534d6de90e65548e2d"
+    },
+    "108": {
+      "product_catalog.json": "sha256:d0b178261dad8332c90e7cfda120c67941fa4f7b11b51739953f59615177af7b",
+      "customer_list.csv": "sha256:beee38d5e0c9355a51e4837de093ce98ff0c56790ff9a5f438bd77e834408e20",
+      "Central_sales_2017.csv": "sha256:d0d2b76a2f69c49986b3b9575efa954da497adde86f19761e03421fbe98790b3",
+      "East_sales_2017.csv": "sha256:c2d3dffbb75da109f1e890aa6e3188a1eea14544574d717239ab52b8213d1dd2",
+      "high_discount_orders.csv": "sha256:c363c758979eeb8f9a54b4da1f6513d562212d8026fd65369436c9782c107738",
+      "South_sales_2017.csv": "sha256:17ee05bd48ae132d6a948d35a554c6e774b6daf8dc37f37d006e3651a827a469",
+      "West_sales_2017.csv": "sha256:fc3ae30b1a23ad2c9cdd097529e793e6bf5db67d8308571ba70627ae6bce5747"
+    },
+    "115": {
+      "2512.21898v2.pdf": "sha256:4d55a9a5ad5d429beafaa1edac15c4e57d5a1c95164b8bbbe134e8e0dc518d5e",
+      "2601.09974v1 (1).pdf": "sha256:2fb4e69405425c6c19cba7a320ebe28c5f91b4ab1d6bee30cb8ddcacc079695f",
+      "2601.09974v1 (2).pdf": "sha256:2fb4e69405425c6c19cba7a320ebe28c5f91b4ab1d6bee30cb8ddcacc079695f",
+      "2601.09974v1.pdf": "sha256:2fb4e69405425c6c19cba7a320ebe28c5f91b4ab1d6bee30cb8ddcacc079695f",
+      "2601.10349v1.pdf": "sha256:a58ccd58d76c162d6114ca7f8964641ac9833e096dd9814b4ff84d324fa7ab85",
+      "2601.10651v1.pdf": "sha256:61494f62324fdec48c271287b46223500e91e224d9eefcf2083355fddd77d312",
+      "2601.11147v1.pdf": "sha256:4394aba76aa12493a701b6341a5588ee68562bef7b24b381ac00d179cbaa71f0",
+      "2601.11421v1.pdf": "sha256:cf489e92b48d567dbd600da0e02a7dcdf6a20d368c08665d0d526d93c3b6f520",
+      "2601.11969v2.pdf": "sha256:dcad73f1f174b991533c5d1e634fa690949d7a16fda80117cd1ae13fa5d18986",
+      "2601.12049v1.pdf": "sha256:fd9376ab1e995350b86ccfe6eae2f5837596372978a89f2603cc02866d01beb1",
+      "2601.12099v1.pdf": "sha256:55a7cff1c9538fe8fb696ecee28486311c81e46857d86df05d42ceacbb8100f5",
+      "2601.12141v1.pdf": "sha256:4ac847aca5fb961f4779bc63933e66346ea4ff419df3bf7f21fd28abe2aa9678",
+      "2601.12234v1 (1).pdf": "sha256:c756075753d2d8e583dea65b28ee70e4934cca5f7526dc791dcdf3864c0e534d",
+      "2601.12234v1.pdf": "sha256:c756075753d2d8e583dea65b28ee70e4934cca5f7526dc791dcdf3864c0e534d",
+      "2601.12667v1.pdf": "sha256:05e6b235bf86f0789b1226bdaae495259187729fabe15d03d5b02e34893d073d",
+      "2601.12904v1.pdf": "sha256:2384b05a2bdfe9e36662c1aa4f05da5bb41383d1293e8d2341d759b1878d51fc",
+      "2601.12951v1.pdf": "sha256:668925b8fcc8a4794ab0204ccdb84a1f513a416be862041bb66a281126de080f"
+    },
+    "116": {
+      "chat_1376.txt": "sha256:2c3288f5d4ae1733e09c969a825e537afcffdfa06af867035c5463951dd4691b",
+      "chat_2395.txt": "sha256:b49435e62e364ed51f8c52dac34246b8f0516867540ce36dbb9decfef64bac07",
+      "chat_3163.txt": "sha256:acec6440e6c270dc406d929c6ffe789f457e9301074d62564247cbcd198c98be",
+      "chat_5034.txt": "sha256:faf373a3edf793adbea8f14eac0e3a58ab20816d5da17acc4c565dee339bf69d",
+      "chat_6805.txt": "sha256:f27d8377ea38e1dc377d45d0f7295320fd78f7a16a1f8d6c5a17c07b91382bfc",
+      "chat_7486.txt": "sha256:001aa25ee7997ff41744b049c8b3ddd90366ed476018f6a0841cd598e4faaab0",
+      "chat_8002.txt": "sha256:faf32518dc7c03aaf3f787525b4a7f6069c3e2a67291bca9b6a3b5b004667ed6"
+    },
+    "120": {
+      "ScreenShot_2026-01-10_200308_169.png": "sha256:af2d844dda028531d6cb413d040b54e1165ea6e743f0346c5c96e6e480b555b8",
+      "ScreenShot_2026-01-10_210325_653.png": "sha256:9c69264e99f19e4e048fcddb08e769278bc21e963e12df99cc9093f782a5b975",
+      "ScreenShot_2026-01-10_212541_898.png": "sha256:00a7af007d2d968700e4614e16cd1d10b880d6af5fa832f5d60bdbae56363dd4",
+      "ScreenShot_2026-02-07_132145_115.png": "sha256:c4a93bae26bd6478eeb36b25d94a46ee8bae88e392041fb3281bcab46fd48cbd",
+      "ScreenShot_2026-02-07_132212_248.png": "sha256:a7c99af352125f300a05009fe0aebdecbb3dcfe10be7d8114343f7eef1ce155e",
+      "ScreenShot_2026-02-07_132218_499.png": "sha256:748bf0f4e01ae1355f83c1c8a247c7c6da910b30e2e68ddabfe0f8420877527d",
+      "ScreenShot_2026-02-07_132225_683.png": "sha256:8aa7f1d7b4d208b7140eb3585aee8795a6f2154cd248ba06cc74ccdd7d4bb907"
+    },
+    "124": {
+      "CL-Bench.pdf": "sha256:bc80a4360a7d761bcabd556824e1e2559053212925d0217b7da071c28a2c5e9c",
+      "ScreenShot_2026-02-07_132218_499.png": "sha256:748bf0f4e01ae1355f83c1c8a247c7c6da910b30e2e68ddabfe0f8420877527d",
+      "ScreenShot_2026-02-07_132225_683.png": "sha256:8aa7f1d7b4d208b7140eb3585aee8795a6f2154cd248ba06cc74ccdd7d4bb907"
+    },
+    "127": {
+      "data_process.py": "sha256:c0fa3ed12f03f97344cf6dd7099d0e8de45586f9f77b654113f376e33609e21b",
+      "database.py": "sha256:4082c8009ee3e4153378d2e667bf5e2d45545b44885789c85d3b2e64fddfb30b",
+      "image.py": "sha256:91495878ff08a942aba3aa8f1fe9beb4e54133d2880cc1e19b161fe02b4b93bd",
+      "machine_learning.py": "sha256:b7374e7da2e340740d00eb7e5457f393832edaa0cb1b51ed43b33802658ed952",
+      "parsing.py": "sha256:0cc9b92e41f6bcd50d504f21546f51da4969dd0db6e475b3545295d0ea0e86f4",
+      "utils.py": "sha256:848137218eb8016d3d77380409884186a44ba184bff2abbe69a2297010e96fa4",
+      "visualization.py": "sha256:57b949eeb6d676f2730204d36560af97c7fca943488d970ba6542a72d02ea707",
+      "web_network.py": "sha256:c9f22602e352dbbcc49a0cccf868478952fbb62ec14ae4fa5d9ccc3469292dae"
+    },
+    "128": {
+      "ai_evaluate.py": "sha256:55655255d49e2244719a5c3f44e6d0c8f1eb5f696804787f1d147e3601a83abd",
+      "clean_cache.py": "sha256:81d902b2a5572b4b6255966a75855f90ff594ac99ccc6a66db12e607cf935f68",
+      "embedding.py": "sha256:36de08310d3088f401b9542931edff009b630ba42189e183695f89fd4155802d",
+      "gradio_app.py": "sha256:d30b5d11dd913b04bb13034258766813b595354db5127a153c4fa8a120ea14db",
+      "table_preprocess.py": "sha256:b89c010515ff2e86481bb03ce4eccbc191f222a394b0a8d87bb1445abbcd0ab7"
+    },
+    "129": {
+      "bibtex(1).txt": "sha256:c2b27937d04cc6b8bdbd310af127c6138c20586298609cd0b036a1a8dc44726a",
+      "bibtex(2).txt": "sha256:24fff395b0707cb10f765536b1f49490f8a5729be01e6885d61032870cd22c4e",
+      "bibtex(3).txt": "sha256:7a51fb5e68286bea9d290fb63f04f9d5a42bea3b35d5925645c5a0d9f541def6",
+      "bibtex(4).txt": "sha256:ad842d953ce83b64c908bde60a88f243abd3c629428baadb9af1415360c51589",
+      "bibtex(5).txt": "sha256:d09909a8f2a31b729add74954d60cabd240e7e3b817589275d9d67f121199f34"
+    },
+    "131": {
+      "table_preprocess.py": "sha256:b89c010515ff2e86481bb03ce4eccbc191f222a394b0a8d87bb1445abbcd0ab7",
+      "ai_evaluate.py": "sha256:55655255d49e2244719a5c3f44e6d0c8f1eb5f696804787f1d147e3601a83abd",
+      "clean_cache.py": "sha256:81d902b2a5572b4b6255966a75855f90ff594ac99ccc6a66db12e607cf935f68",
+      "embedding.py": "sha256:36de08310d3088f401b9542931edff009b630ba42189e183695f89fd4155802d",
+      "gradio_app.py": "sha256:d30b5d11dd913b04bb13034258766813b595354db5127a153c4fa8a120ea14db",
+      "main.py": "sha256:f8bd5a2fb60679b458097d91fc7693d6f1290eed308311fdda23408d99a722c3"
+    },
+    "137": {
+      "partner_agreement_1.md": "sha256:1f8b8e0288981e0e5c44d87c2b898bbe59f41ab76de0c77448752d2dae50d09c",
+      "partner_agreement_2.md": "sha256:4d9fd08d93ecf9ab3ff73fc9aa17e00a31232e47b4e84a8bdb761aaed8a39425",
+      "partner_agreement_3.md": "sha256:bbb234f3111a8d86f6aa341e013c2a87651df20d310d8e279ed8b65ddf7a6d90",
+      "partner_agreement_4.md": "sha256:6d3964147034e061cfb1ea0738ba4bd971c19020cac3296e74f2405343fb0e47",
+      "partner_agreement_5.md": "sha256:21b3dbd10a9dd113b783c95b923368159edfba6b38f37883e6a84283dc14d646",
+      "partner_agreement_6.md": "sha256:ccf5c3db3cdad0d5fb85345e80d4ff0d36edda80a1c491c9971a813d6ac45620",
+      "partner_agreement_7.md": "sha256:839f209cae2078e33d8e60db081e56226e5a975dd2630d8f6fd0bb6a15b92707",
+      "partner_agreement_8.md": "sha256:a7d7deaaa98bcc33d60667ae563641ec9cf5e3aeeae4b42c93910a5285b00759",
+      "partner_agreement_9.md": "sha256:29d8ca374910caa9a133a5d7b9ccb159010fc1e5321d8ff980b5fae0c10d1207",
+      "partner_agreement_10.md": "sha256:39f483798dbd83b0d8d7e249e6b8a2f3964a8d1efcedbf78d726f40ddcb3ceab",
+      "partner_agreement_11.md": "sha256:09a274ad7cfae9c3b4775a13c4eef9542b8780a95b3eedf17ebfbce07eea1019",
+      "partner_agreement_12.md": "sha256:c55c4d4cbd1b37cf01ba55bd3738f7a52c9068a836e776247eb0a3be1224309d",
+      "partner_agreement_13.md": "sha256:40610751e8cb0b485134e62848ea12146718a12fd296b765e57ebc4c25104b01",
+      "partner_agreement_14.md": "sha256:ad24c085ce84b065a79e441ca9b1fabccf2b05e97f19c4c9ef28640142cf23b7",
+      "partner_agreement_15.md": "sha256:c0414d9fd9a06a57df793e3ac032e255573ed82ee9c55425c0dc44e0e8f6942d",
+      "partner_agreement_16.md": "sha256:3b0e5b97f008f6b2342351cd328b036cc4d9de95f7017f577e122502875d9293",
+      "partner_agreement_17.md": "sha256:3ec55937c8259e913bb86579ef66a42c323d90d5e1cd819c97bc312b729752e1",
+      "partner_agreement_18.md": "sha256:68b876aae3e7e24dff0be14eb61a8fca6556d2b37c437a9eca3f8c057a8ccbe9",
+      "partner_agreement_19.md": "sha256:d0e662a470c5bea1f79b261719fe05441dfb401fc4b0fe93a1fd30895c4b21d7",
+      "partner_agreement_20.md": "sha256:e5eef5a57d41c5acf7a89698df4f235707bdf9fb0a12ea32289863a6c3b4c81f",
+      "partner_agreement_21.md": "sha256:462a96565e9f1dc54e1a83c1114cb8d4e3ba0d404654adc1224274969ef2aaaf",
+      "partner_agreement_22.md": "sha256:dc1121ad2f1e7555f62777bfbacae052bf41f70124ba4e38d27426f3b8ba6707",
+      "partner_agreement_23.md": "sha256:b44d03a82f8925fbf492f8f9290ce951857660fe5726fc88a9b64242e88bcf32",
+      "partner_agreement_24.md": "sha256:2b1d56d9e4856dfb4494b44768fb16b6b55c138774debeba9f9299e7771e4a56",
+      "partner_agreement_25.md": "sha256:7f874bf177202dde2eaab7e65723c3385ad453aca39dd16d166e93334e7f84bb",
+      "partner_agreement_26.md": "sha256:2560b8d48c056b5c248a52a31f8d2776713a7b55a30fef1dc14c90505560eaf1",
+      "partner_agreement_27.md": "sha256:a83e53597b2ec86c6e5a0a083cf9d92be09435d29728a0296e91df2b1a230d05",
+      "partner_agreement_28.md": "sha256:af7cb1c7a0bd461f1dc85d4e9252b59acfd1ff7ae554e9d0e6d842cc4b068d8b",
+      "partner_agreement_29.md": "sha256:f7b3c5ec7d89cd3141baef7989da86f09750aeaec672b690c6e0ab8181e4908b",
+      "partner_agreement_30.md": "sha256:2853e788018489eb4640c5671030986928ff8d5bcf6dd502109f4a964f283c1e",
+      "partner_agreement_31.md": "sha256:a28bca19d0b161a6c185154985b48748c7fc2fa0898e1aaa50c1b4ba93066684",
+      "partner_agreement_32.md": "sha256:4efd60f204d82b83f4d0495b37ca4c1e106b06a4a8b39bd050552ca7f85cf69e",
+      "partner_agreement_33.md": "sha256:2238f8e0c2c4b61155efc78c3197fee29be0a806136a840912edc7e5a67bce3a",
+      "partner_agreement_34.md": "sha256:f653932972bc22814842f50834262f462eb8f2356c9c0d8cf395e1c5b50230e1",
+      "partner_agreement_35.md": "sha256:6b4ba4a5fe29f0287285709dd645b207a1d5628b25b252e5faccb92e9c03236a",
+      "partner_agreement_36.md": "sha256:cba8f9c1c9cc48b6c0b1606aea39cf96985259c3d9cccaa336708e99ecbc4632",
+      "partner_agreement_37.md": "sha256:7a52f20365d2c04f736cf3afbd5eabeb19908864d37ec101f154e8bbdfb2f9dd",
+      "partner_agreement_38.md": "sha256:e49cb9a433a2b70aa4d4ff3e3500118ec175c4ffad40515fa08f83717b45cc53",
+      "partner_agreement_39.md": "sha256:38019b00b18106fa6d024c61a56d0016c3321c00e365fe76c22b9506d2638592",
+      "partner_agreement_40.md": "sha256:9142f913d613be79d2843ade66b0dec8b68fb765ddbc7521f10635f4caee5920"
+    },
+    "139": {
+      "event_plan_57.md": "sha256:b1290cdb3122d348c095b934fccab07181aa040c0d409cafa4d573c42566b75b",
+      "event_plan_58.md": "sha256:63f0a8c65028191a05542f08d78cd6d185020ec600831b1480f9a57c1fd3dc4d",
+      "event_plan_59.md": "sha256:4ff8c47eb229ef351ca34f282fb5b35256954f0ed0bee3160efdc6da54adc55c",
+      "event_plan_60.md": "sha256:9837ba336e2e0dd8e15873940f6df95a4f2069d04daf8d493a9ee36e7ab2ae1f",
+      "event_plan_1.md": "sha256:0fc7d50b3cd9aa3550ec9d8ac140864dff5c2ffe1fc5c8d1dff0d3769d312c32",
+      "event_plan_2.md": "sha256:fadf96e3e3119482e2d7be4c8f121c9ae882b861abf19c21393a3dd2530ad59e",
+      "event_plan_3.md": "sha256:1fe6714cec3886ce355f38a1e900742005fe41024e2c29c0bad915b3e04a7323",
+      "event_plan_4.md": "sha256:7cbde1ef99a46471a81dd5e6d4f7beac22fe1f112ecbcd126c58273be6c3dcbe",
+      "event_plan_5.md": "sha256:8a9a0946a423dfd7ce7282ee1b6ac97042f362f2cdb5446e55d20dceb6a48bb5",
+      "event_plan_6.md": "sha256:40bb4fa047f914e8ec275d224e73034ce571884583dbee802999b183c6faad4d",
+      "event_plan_7.md": "sha256:da0aa362246e7f13a36c9fc49edda4e485765200af87519f6632f9cd60781727",
+      "event_plan_8.md": "sha256:be8f5997b56be603347237d4c66375c72c17c642613aa98b84a33f151159d581",
+      "event_plan_9.md": "sha256:e0a7af59cadd5a7f2dd529586ca48451ebd6b1fdb9277d97177e9dcc9e4082ab",
+      "event_plan_10.md": "sha256:09bd8c010a64d26d1936a552c59aafc3f6ae0d0a72fad53d0eb233dc01c84e3d",
+      "event_plan_11.md": "sha256:99c8010415ec9435aace0b0f674fb7750bedcc4c52212e0d86e92b6f6beea714",
+      "event_plan_12.md": "sha256:b022bc55c557e351d780e03632c947f36a60e114ea0a2fa0c343e40259071d3b",
+      "event_plan_13.md": "sha256:c7810add24b4d215dbcd8bc85d4ec6c4660ced69568dc99c89bed7be84404ae9",
+      "event_plan_14.md": "sha256:6afae01a91dea8dfd8ed294896c8372a2fe5e1891ac2472da95244330531280b",
+      "event_plan_15.md": "sha256:f997bf1e4d57df34666e9352ebcb98976e1c41e08fe532236c63b5de4c754fc5",
+      "event_plan_16.md": "sha256:17dd7575e8677fcc245e824444473dd23e46d3a0d42d78cf3df8523dad9d4ed5",
+      "event_plan_17.md": "sha256:bd16f51734ce827ffd2ce6a75d78eb9ba27b1d8cb3640385d2855868df7295d7",
+      "event_plan_18.md": "sha256:d9dc9b025599ae67e6d0db1ec79e395be9152c99cc4bb57f89bb698d739a280e",
+      "event_plan_19.md": "sha256:85508bfbf8eddea9e50ca2c431eef0674b36360ed167acbd74c2b53911a93afd",
+      "event_plan_20.md": "sha256:c1f1101a84a27906b690ff60bf24fc422e862ad83e4cb0b03b88fd919e31de5d",
+      "event_plan_21.md": "sha256:0860f0fc31e34e334a665df29fd4892ddee7faf3e299672e22068a420f7aa883",
+      "event_plan_22.md": "sha256:e9fcf90de6be2fbbe3dba7758e11da4e206da964d1ad3b52ae79ecfef6900e50",
+      "event_plan_23.md": "sha256:036d7a5f435b51c3a37fd04df2bccc10c3ef231c65d3c6d95b22e82e57e4a705",
+      "event_plan_24.md": "sha256:d4e58436c0e40e7c7da700be9bfafccca3f09fcf8ad10de6e13257653e0f3c80",
+      "event_plan_25.md": "sha256:21c07a07818cc4336b09d2c176da6f241e51be34d9469339628df05f5cf55414",
+      "event_plan_26.md": "sha256:1da59e34e60754505477dc3a7e8035efaf6acda0e716f8fb0f868384fe8ae3c9",
+      "event_plan_27.md": "sha256:b17e251d7fd3624300a48c9bda69d06ecc330bcd818c04becec32748a68d5e9b",
+      "event_plan_28.md": "sha256:5d121d4db3fb07cb188a69c18a5ad1ecb0f4afb94bf834ac5ee1ef604b38938a",
+      "event_plan_29.md": "sha256:95f98cdf2258977fc0c87586d4940816615987325aa39af53530d8e3182a387d",
+      "event_plan_30.md": "sha256:b40ae6e73acf55693e21a2f88909302cbb4d712d5f27cc8267323d555533a7bc",
+      "event_plan_31.md": "sha256:9b3a2b66978aeff74dee6b040c4ca64867bcf558ed6223b978b01b765c4738f7",
+      "event_plan_32.md": "sha256:e15f6607c89790f535bca600e75ea199ff9629dbb98cb833073e4f51a5c5dc61",
+      "event_plan_33.md": "sha256:fb21d76f7acac962db5232d8f01891a7d45de412fc162be82b4d76399696e40d",
+      "event_plan_34.md": "sha256:ea45e743979c566cfb89a2ae00d5ad93c3e4b36132d993aa757406128158f66e",
+      "event_plan_35.md": "sha256:ad7828201ad095fc4a97ef7414da43cc9b61219bb44fae1bb771b7ec3aede0ad",
+      "event_plan_36.md": "sha256:ddccf6835a3354a8d26decbd91ebc46a06cb0c4aa7f5741c0fc256a3c89ba6cd",
+      "event_plan_37.md": "sha256:ff23e69aea52879c3480839cb47f7ae456059c1a1ea044432e55d4e36febc44d",
+      "event_plan_38.md": "sha256:1521f3add2fc3e13e0331be8d339e245e421ce812d557be107f244ce31e5b81c",
+      "event_plan_39.md": "sha256:8711e31a76beea978ec928942d84735452cb44faf9e738e5d27e7caf230c3db1",
+      "event_plan_40.md": "sha256:9d494c94ab50b45d6393592d630d28fd105c7b522ce55248137d28132f8ff9bf",
+      "event_plan_41.md": "sha256:f90b2e3e6e02ccc945ce5d0381c4160c20515d0be7568e6e7a22f9b79953211e",
+      "event_plan_42.md": "sha256:707d9d88a9ce1c549b737b8402318129229251b42436f6fb47dc7bb12bcd4b88",
+      "event_plan_43.md": "sha256:f72a81edc0959e6a4bb0db65152738eec4694a273ac4b06b27074b1151196d20",
+      "event_plan_44.md": "sha256:f1b595ffbe16f92e8f9974b1707a02fa7e5dba1755fb9e56ef89ee7e9a1da2ca",
+      "event_plan_45.md": "sha256:756c914c1ea36760eec707799bd4722550e1c695109957bb69684e681b9a4526",
+      "event_plan_46.md": "sha256:38b6b44ffe9f8f6960b47cda5162d0876a0cb00d035f9b41f70cc816c1d24d35",
+      "event_plan_47.md": "sha256:ee53cb6eae41f0e5ea76a6c828952a6a3f8188c2f8806ecd13396f70c7edf4ec",
+      "event_plan_48.md": "sha256:af3acdacc06b01a8362cf7fd8b334b642cd542a0d2c3227bcb9a637334164cef",
+      "event_plan_49.md": "sha256:f2c3f031da1be696b9dd96fe01653a85e97b7172a5718f00e33170161fe53b9c",
+      "event_plan_50.md": "sha256:773c0a47c2e310c32a3899720baf675d3afd3aac0847f6a5e77dbdeacac9931f",
+      "event_plan_51.md": "sha256:717726044c1f87980d300e7617fee10dd393f04cc61bd26dfd2a28f5c81bf05f",
+      "event_plan_52.md": "sha256:c9fd4e17452eba48393fc92d0dd3acc640d062a437e0d37c62db298c48ca4aec",
+      "event_plan_53.md": "sha256:109db22840953d2a8078c8920354436a630d5f338c8dbf5f81611a030c3851da",
+      "event_plan_54.md": "sha256:f7e1d27266eedc46c184ae21e40217984882ac1a37d9cfaae4b9f4d7ff83389a",
+      "event_plan_55.md": "sha256:bd2e116ae271a1ce892582900fb758964effc211f27538130eb18e7c3a44906a",
+      "event_plan_56.md": "sha256:becabc9420c868e8efeb36c23436e04c0a009f8715966087ad9cc1f819ab37b3"
+    },
+    "143": {
+      "post_90.json": "sha256:a95fc902a6cf42700c13183833d443eee5415bcc5ce0b5a747a12eba9ea011da",
+      "post_91.json": "sha256:023047aaeee5e8506fe6b7a0cd6885d7f4409abb3ece93fc6d2ed9b03037aff0",
+      "post_92.json": "sha256:8a501343a1f23c2d9432096f376ed2693c661bc4bb1263c3e7311c4d1c0acbc8",
+      "post_93.json": "sha256:3f6c3c703cb432038c4f40cd5d671441b3c63e4614c1705fb51d5a47bb692620",
+      "post_94.json": "sha256:97beffdd097bc5ad6f0ef0ce5acb55530711b9804e5678c906349a3a38d64674",
+      "post_95.json": "sha256:06e04760d574839721fd23a59deca6551fbc4f92394d17803a53ba31e3970065",
+      "post_96.json": "sha256:a799cf4f6908992e944f92b2643e69a0168782488cac65e5f599c7e3fed91fc2",
+      "post_97.json": "sha256:1416b1f0dd9f176ad4327b4524900ae541537b6fef947375c39942689a5bed0f",
+      "post_98.json": "sha256:1dd893196c8f9eb4597aa80111a4b3b6e9a4be157d6e210b57f435b81b231f22",
+      "post_99.json": "sha256:c4d2c34d155085623d98500bc407e20090dcf847fc506f65b3f52a5accbf9935",
+      "post_100.json": "sha256:2a54ef927a91a107ed4180c0b18ef8723d002e7765da48d3ab8210106b050bde",
+      "post_1.json": "sha256:3825dafd3a9bc749572dc67813ab6247d22a76979f31db5f44016011acc159a4",
+      "post_2.json": "sha256:985fc3aff156f3339d6395642ecded416770c609e8ea594bd474b44114230294",
+      "post_3.json": "sha256:c89a22f515fac84a8b1e3456b5a64cdb2b546bdc0ee969d983f8dbe9ac3e267e",
+      "post_4.json": "sha256:d185c2595b30590b03b85e7fbd6e040f3b0cc03e10bb555b84041498fb5a2434",
+      "post_5.json": "sha256:ec5401fc796822dd9f16a0d881ea840abf7192b7eef84aa8ef838639c777e17e",
+      "post_6.json": "sha256:dc0955fba6648dcb6f46d53348e4530ac5a63a0277898d5f13a01027b6e3c253",
+      "post_7.json": "sha256:9664379e799fcc5fd33c1d3bfea2bac3c8b7b610030374b55f00f8f70a6b8bf3",
+      "post_8.json": "sha256:a5f3ed85e699116487959b9995176a5dd4003ef4c82a8a64ead7ea69004d2ba5",
+      "post_9.json": "sha256:92b0df26b5256b24d78f34910b094627c3d89d6a84d0609ca753af434ba7c746",
+      "post_10.json": "sha256:f185c4482b56a580ed4836df24c2af77c713ddcd7d3d06710a681c48ca20d142",
+      "post_11.json": "sha256:1c5a26b72953491e98fa5b1c8fdeb4df33743bb4599ea2b1361b08524f8ace08",
+      "post_12.json": "sha256:a353b8dd088bacbc0e53e5c12f56f93499e6a10569ed3d02c5d9b526004cd8a6",
+      "post_13.json": "sha256:1c2e39f03d067cba5c2dcdac8954d47964cddd4add6df2765568416fe1e5473b",
+      "post_14.json": "sha256:23e8bc9c706d7b684afdf05901eeab184eae2e29f3373470711ddca33a42b731",
+      "post_15.json": "sha256:53961e28abc44ba8db3d3a66fa3c9648e8d22a8977af4559317512f577a21f8b",
+      "post_16.json": "sha256:ea5b13bbd5d3275c9202d803e75021f18c5968e315eee537d47862ca027ebc88",
+      "post_17.json": "sha256:d0100eb2aa22bea8aebe0d7747bc41787e7ad26118be30a899e1fd0334217667",
+      "post_18.json": "sha256:790ee6e1102ca3552dbb048e0cf07474c4109dc5207f59ef6c055b30a223bebf",
+      "post_19.json": "sha256:3836e6d57fab9aabe89d784da90fda19aaf06a65db2093d91c85fb4d2b7b4fa1",
+      "post_20.json": "sha256:f620d8dfede251495d0116796b9b9f4492fd098ddba2a1698a9b4de95f013c71",
+      "post_21.json": "sha256:d545fc6cf012c90ab3183788a3e4f28faee710c9b524e59c0aba53d778319833",
+      "post_22.json": "sha256:15f601956c9477b5a001024016e2dba3d98dc57ec7fc5fdb30e1704062a2afa5",
+      "post_23.json": "sha256:9a9c04d352e8dc39f64505290c292c295642a3bc4dcf1e8694ea3f8576caaf6c",
+      "post_24.json": "sha256:1c551b80904025081026b238923d675ed00c347c2a4c45af5a76d2a3751f09bf",
+      "post_25.json": "sha256:2420a1e2954ae8728bd0418de67ab0e0ae2002b2ae0bdace6692a96fe407012e",
+      "post_26.json": "sha256:f7b7325693dde7bbaba9520cdd31dd4bd28c008ad35e4e118ff4c617e1dbf471",
+      "post_27.json": "sha256:4320f693709980a8f20bf5c587df88429f74e138ed8253ca5dbdca1b42aa0fe1",
+      "post_28.json": "sha256:134096cdea56c9b3a3442026a16aa1f0bd7084f1a44753cca9f22aab0603c9ab",
+      "post_29.json": "sha256:171d139b49c70b5dd79f2925c78c962dc99aacb713493754f722e80c49011de0",
+      "post_30.json": "sha256:7773cced219e89253f215b47663b9680ad1d8d973aeef4f6c58e646c5924e317",
+      "post_31.json": "sha256:b110506bfad29c68ca371108597602ac5532e6770afa931c697a792f2eb73895",
+      "post_32.json": "sha256:6fec0ccb8577393ef725a74cc8bf386f2c2c037786eb379384ab103907caea2a",
+      "post_33.json": "sha256:a4ce7841942d4fc536910af4e02dd61db0616eedfbb317d674b0d6fddbefa4d4",
+      "post_34.json": "sha256:bf264de93f81b7fa9f5abea5da17b18d9a2d39cb622359fb5c8fe70f2839f632",
+      "post_35.json": "sha256:c0fbb6d86418c221bff17a71bda40ebefab9ba73e58cda5e5045c232e3c9cc46",
+      "post_36.json": "sha256:d59be03feacf8e5d399bbd56dd15af6f82e42880cfa72d406876522edb0a6ed6",
+      "post_37.json": "sha256:1b2861afeb94e80255f8f041720646d0e4c1233cac4bf8dd13089f6df089e9cd",
+      "post_38.json": "sha256:9576a73ef0299e77b4c99e1256d15028a4a8a9048f22b18401f6dfb11ee7d1d2",
+      "post_39.json": "sha256:9b0266e319730cf269863c60df818dffee04c798e5e1d2cdf94b2ac945b48d60",
+      "post_40.json": "sha256:162e795e8d2a8a40ef1c7543ef051ae054be352822e0598ac0686dafd577d892",
+      "post_41.json": "sha256:e9696b3ce116ee821a74a5fe8d4143d5c99ebd45858ffc3150194ed55be19a6b",
+      "post_42.json": "sha256:bfd4b215c4da43bb1acfb0c94815216814efc4644a6de1837c3bbdeaef4105be",
+      "post_43.json": "sha256:28adb8b347c3140f2ce1e1f27c6b2fa2bf808c61572f5d918d4c96612f054292",
+      "post_44.json": "sha256:5b1c7bb6daeda25561213eb9f9e934f996de0f04820b69159aafe160372897ef",
+      "post_45.json": "sha256:0bf50cefd62e22b22a8fd89b602fc3235bbb771d248c0a34fcf2403ad1e7c10e",
+      "post_46.json": "sha256:ca8115fdab146a0f29e1cb0d027ca07decfab8f3cc34ba4081410df72a968836",
+      "post_47.json": "sha256:8934e9b4513a57171ea4421583770eeb50da1418b1ff26e5410dfce94882c58f",
+      "post_48.json": "sha256:b9c1a84f38092facb2c72856134edbfbd72e203941c160c274be55f1b15664cc",
+      "post_49.json": "sha256:8eb0b6d6ab89aa4104dcd67c5d4bb17a6738321c5de3c2920ca6d7f12097f114",
+      "post_50.json": "sha256:acec702d6c076f9eaf902bc41c51442da10c094e06ef206f64fcbf66da7784b9",
+      "post_51.json": "sha256:f53febb63d205fd2ef5fc3c3332f83697aac1449941b8eb55b0a4aee0ce935d8",
+      "post_52.json": "sha256:f2e21b144ab8ad03310ba0b3f27eaf188a22516aac2d48440729b3a9e89b78a2",
+      "post_53.json": "sha256:085f5baab75bb11cb7827df2a7a0f8fdf27102f40b2898049a9844c674fa8e21",
+      "post_54.json": "sha256:4c19c62ac19459091d40ba94926f8db93381e0f9e4054787464f97378d011095",
+      "post_55.json": "sha256:acb85884204a4f9e63ab98c9fac6802c4bae6b0a5c7a61cefeef6374a977ceae",
+      "post_56.json": "sha256:f31906a11cb10d0ce6a9d017d7c3882b9185a89c57ae7ad710f2c68c9b93f8ce",
+      "post_57.json": "sha256:2727b8efa13014562b2129aacfd954cc8e23cefcddffd3bdce286e8e348a286c",
+      "post_58.json": "sha256:032193d72336fca59a5b3ddea4f8cf407948357579b6de774379ff2e2af6a2fe",
+      "post_59.json": "sha256:30d6b9540dd1bb3e10dc7e7d719c33b26f1b3465dd06927002f85252bfc550a2",
+      "post_60.json": "sha256:895e81347aa3c242e73b1a43aec8d6d66eb39706cb2c7a6f1deabcd4839f78a3",
+      "post_61.json": "sha256:1f895609a452b44613c3d6873247c9c44dff49d19ea15c3c3cd7256fdfc168e5",
+      "post_62.json": "sha256:a707b68a44459aea69740048ab7d0d324bf2d70610ec808f462e411da6de52b8",
+      "post_63.json": "sha256:73803869f000baf202b87307a090a4fdc42ce956e6624f749c3b7ea2cd717bf2",
+      "post_64.json": "sha256:b9d73afba811aab066f95ad3f1dcdb4c585c0c687a466c2d210a314064d3a79f",
+      "post_65.json": "sha256:b844304918cea34a84728c1086e502d7a87f3a18119d7dc423629b91d3d095c6",
+      "post_66.json": "sha256:19818dbfbc2d9e4eab759db29199d7c3e79e2910cd3794811b23283b0b5cb797",
+      "post_67.json": "sha256:d6fec45d23f2880ea028844d337f302b7b81249ee4f4d32d1ea35b905bf7c9e9",
+      "post_68.json": "sha256:d4034cbbec20a76eaaf85ce4279db7a1fbc36f722f1bd0d7a82540f490a37e6c",
+      "post_69.json": "sha256:d16aca7bc5a8649ebd98ea4be4e419c94a81fdce833c14f2f34b8d82e6712ed7",
+      "post_70.json": "sha256:93c87f4c85f54df28b7045844ee117f7b51597f8eb9372d9d6ec7b4c8fe45bd8",
+      "post_71.json": "sha256:8771d5e1dadbaa1ac6f61246918c83f2048a4131b0e9ec469d72b5d83fc7a061",
+      "post_72.json": "sha256:d0a37a056caa4018809a7e15822446e6af43328f13c1f9be552a967ce275b7ea",
+      "post_73.json": "sha256:6a5212a8c6528c4efe2bcef6c8557df4b92aaadf2d506084cb0ff9d2162ce253",
+      "post_74.json": "sha256:214efe2878ec27b9b67ad2fae3d15fcc473f4d62af71a31bbbf1d9526225f439",
+      "post_75.json": "sha256:2e674eab7b0d427fb443d79c082296fb5be18405b74c3362616e5983d2215874",
+      "post_76.json": "sha256:a0ae8efaf7d4b57d95b447b879d27c759e92589d5a06f3332a5b46e2ab8fcb7a",
+      "post_77.json": "sha256:4c6d73ccc6372c9fbc2a065a01b57540e05e7be88146eb51e5a2929c9ae6b66c",
+      "post_78.json": "sha256:48ba85014fa013583ea9605f36d1072dac66d74c075f6357da74ab56cab8de4b",
+      "post_79.json": "sha256:2d16c5e386a6475678fafad19a4cce7835a1641149ec8c87409bb0fef76f2aff",
+      "post_80.json": "sha256:268585cb1ca57933ae5a3c0efc2b73a702367e6e272e63db0763a297e7f95b4e",
+      "post_81.json": "sha256:5745b44770093a93dc9f878554125c572a29e25574b43b80c6390f18254f2475",
+      "post_82.json": "sha256:5013e599cf1894fe0840a9a73bf5abbc6bf08dd3626d7bd39d628cbeaac55aa2",
+      "post_83.json": "sha256:86b303b1306df49f953c1b64a6358ee5b7787fcb6aaf869da533452c7ebbb08e",
+      "post_84.json": "sha256:29238e782887e01634325f84662df2491a8ed8c9b868c9f616812068744a62d5",
+      "post_85.json": "sha256:192fe025a965a6e7b6f5259ea7196442bac80c090d976afc60b2f41536170aa7",
+      "post_86.json": "sha256:877f124d2e48406d88a93f2c2a4b7bd711f88b0631a84efbf2f2d25bbacdd928",
+      "post_87.json": "sha256:30c8f08d38baf7d66a436dba90aba9faeb14745cbe4492e01ee2da1b97cb7219",
+      "post_88.json": "sha256:4332ec324c577388d77e34f67aca95af68fec31fa9c03e4a956862ee14291695",
+      "post_89.json": "sha256:7ce907159dbed279bc4b73a00c87e02f5b33a4f16b8f0a771a233aab948c1665"
+    },
+    "146": {
+      "SOP_L1.md": "sha256:24d592bc98920565b08e7972b2ee18d001879725275aa97f527c4a6d88065ff7",
+      "write_alert_handling_SOP.md": "sha256:ee66f3b6802edfc53c9ca78c76aa6cc8b761b2077d8439b31e0c7b139006cb48",
+      "_SOP_pre_release_gray_release_online_traffic_isolation.md": "sha256:894953954c9a93125d2da6f6be3cadb81f74853f0bbbbbf97ed4f5fdfa53c6e3",
+      "MySQL_upgrade_standard_operating_procedure_SOP.md": "sha256:24e6c1f3aed30c9d8e8028fe2a002957ee3135bbea63f7364296b674b183a816",
+      "ban_non_compliant_applications_SOP.md": "sha256:3ad68af57f98d8a3e11236f8792b30fcbb8aff82e96bb096035c4f1173d2a452",
+      "SOP_issue_escalation.md": "sha256:2c693d3a0e1f07d691307f2a98ece23c55bdffd36d791fda82ae13947188065e",
+      "SOP_campaign_launch.md": "sha256:af206de1bd79d3f66f95094916939fefcb8c5185871d8c0e4e55fe09efe9c5fd",
+      "SOP_customer_feedback_handling.md": "sha256:686f4f693e16ecf50a4a5d640650618854a6d069d5d45e9271909b633efd904e",
+      "general_SOP_draft.md": "sha256:b9d3a8f0efcdec14c568bf7323264520c2a22b351a18c400a5e32562d9c35ec0",
+      "rate_limit_scale_in_batch_limit_adjustment_SOP.md": "sha256:0328aa88e6dd75d88d3eb7f7535d73dd2b2e21747f434b5f444a65fbed6611da",
+      "general_SOP.md": "sha256:9b3db8e439e4f1add01649360b65dc578d283edc539edc5b6acb2f68e75b4b64",
+      "migration_deployment_SOP.md": "sha256:2654d10afbde3464def7622a63c7eb8c16c683141315bc5e3b204486b1968bbc",
+      "evaluation_annotation_SOP.md": "sha256:bd34f6c2d8f34bae17d6dc8813866ae6cb7c5d5b70c5152c40f90c17320b3c33",
+      "evaluation_dataset_annotation_SOP.md": "sha256:ca460e56fb812cd965dcf7bdc5da5820516d0110a0bf613135e055bca4b208fb",
+      "evaluation_SOP.md": "sha256:265e07e69945bde977fb3169944c5003720b3ea5efb86ae1eddb86f2c54687d3",
+      "data_annotation_SOP.md": "sha256:e61efb8cad08156fc400dfaf77abcad82a68aad111386619b9f94c4cd5299e7a",
+      "livestream_room_operations_SOP.md": "sha256:aefcc7800b898f9ab5ef586a6ce7485cba6183aedcd6f8623f84e7768aa15277",
+      "deletion_drill_SOP.md": "sha256:6f7bcd1717cfa62f10140f521912d5346bdb1dee2f84432ce9544e6c8117b630",
+      "traffic_cutover_SOP.md": "sha256:a2ca81fde0dd64c613b77d832c099b58c8b2e66a2b57d4c3e6fccc35b502bee6"
+    },
+    "152": {
+      "scientific_illustration_icon (1).png": "sha256:b0a09cfcc47e08d06678f9af0b0f8b12a16e8743275e5655bc0ef5cad6172f6c",
+      "scientific_illustration_icon (2).png": "sha256:8a2411d438af5600d0f31edad0c819104005dc2628331020b4de18c70d2eace7",
+      "scientific_illustration_icon (3).png": "sha256:9781064b05d8423327ae8e2f85454e4c51706e54f329c681fbb2e82e6a4eed46",
+      "scientific_illustration_icon (4).png": "sha256:f3749b5a5e627c3156973f205a8292318d8a49a1fd5d0e59358a9b9511c005c2",
+      "scientific_illustration_icon.png": "sha256:046bd0964878350cd923a14cd3eb152a277a1bb9f7072655a7545d470a0db8b2"
+    },
+    "154": {
+      "product_launch_plan_v1.0.md": "sha256:9415e10ddd63d49b4df73302ef7f9946b344c3979b9912366512a946d0c5ea6d",
+      "image_asset_list.md": "sha256:8ddf6caab8e5699680339c0fbab41dba6617cd7dd039bad5cdd7e1ede26d5a5e",
+      "project_retrospective_20250215.md": "sha256:c28cd385cd65750026e045be477f76483548b14841fbffa28eb7bc4d4300efd7",
+      "industry_report_summary.md": "sha256:901621176784e6b8b329ba28480536e9f364e3155a730f40a8fd331abe3ef910",
+      "user_behavior_data_20250215.csv": "sha256:5006efb2843ffeb62acac4f2ffa9776e0a75bddfffa58ee24eb323c782a97695",
+      "execution_plan_2025Q1.csv": "sha256:94c0ec45594c7d72fa16ff22c2838262d9920a1d1972244161c6fe6be4fefa2d"
+    },
+    "158": {
+      "record_two.md": "sha256:2e4ecb7399c25c07ceb53f34221ae904dceea2377397c023039f381382abd020",
+      "record_three.md": "sha256:207f1190b21a8d09e61b4e92ff33bdb8149ec18a95bfcb8722b8d1128ff0f700",
+      "record_one.md": "sha256:9b81c1a3eeffc6d114a34ecd2fc7f50f7a8532b7a95de5e4009d69ea904d66b7"
+    },
+    "159": {
+      "event_plan_v1.xlsx": "sha256:f677ad099da0d181e59c019d638e5b81c9ba90a6cc84ade75fd9a3c52fe13c45",
+      "event_plan_53.md": "sha256:109db22840953d2a8078c8920354436a630d5f338c8dbf5f81611a030c3851da",
+      "event_plan_54.md": "sha256:f7e1d27266eedc46c184ae21e40217984882ac1a37d9cfaae4b9f4d7ff83389a",
+      "event_plan_55.md": "sha256:bd2e116ae271a1ce892582900fb758964effc211f27538130eb18e7c3a44906a",
+      "event_plan_56.md": "sha256:becabc9420c868e8efeb36c23436e04c0a009f8715966087ad9cc1f819ab37b3",
+      "event_plan_57.md": "sha256:b1290cdb3122d348c095b934fccab07181aa040c0d409cafa4d573c42566b75b",
+      "event_plan_58.md": "sha256:63f0a8c65028191a05542f08d78cd6d185020ec600831b1480f9a57c1fd3dc4d",
+      "event_plan_59.md": "sha256:4ff8c47eb229ef351ca34f282fb5b35256954f0ed0bee3160efdc6da54adc55c",
+      "event_plan_60.md": "sha256:9837ba336e2e0dd8e15873940f6df95a4f2069d04daf8d493a9ee36e7ab2ae1f",
+      "event_plan_1.md": "sha256:0fc7d50b3cd9aa3550ec9d8ac140864dff5c2ffe1fc5c8d1dff0d3769d312c32",
+      "event_plan_2.md": "sha256:fadf96e3e3119482e2d7be4c8f121c9ae882b861abf19c21393a3dd2530ad59e",
+      "event_plan_3.md": "sha256:1fe6714cec3886ce355f38a1e900742005fe41024e2c29c0bad915b3e04a7323",
+      "event_plan_4.md": "sha256:7cbde1ef99a46471a81dd5e6d4f7beac22fe1f112ecbcd126c58273be6c3dcbe",
+      "event_plan_5.md": "sha256:8a9a0946a423dfd7ce7282ee1b6ac97042f362f2cdb5446e55d20dceb6a48bb5",
+      "event_plan_6.md": "sha256:40bb4fa047f914e8ec275d224e73034ce571884583dbee802999b183c6faad4d",
+      "event_plan_7.md": "sha256:da0aa362246e7f13a36c9fc49edda4e485765200af87519f6632f9cd60781727",
+      "event_plan_8.md": "sha256:be8f5997b56be603347237d4c66375c72c17c642613aa98b84a33f151159d581",
+      "event_plan_9.md": "sha256:e0a7af59cadd5a7f2dd529586ca48451ebd6b1fdb9277d97177e9dcc9e4082ab",
+      "event_plan_10.md": "sha256:09bd8c010a64d26d1936a552c59aafc3f6ae0d0a72fad53d0eb233dc01c84e3d",
+      "event_plan_11.md": "sha256:99c8010415ec9435aace0b0f674fb7750bedcc4c52212e0d86e92b6f6beea714",
+      "event_plan_12.md": "sha256:b022bc55c557e351d780e03632c947f36a60e114ea0a2fa0c343e40259071d3b",
+      "event_plan_13.md": "sha256:c7810add24b4d215dbcd8bc85d4ec6c4660ced69568dc99c89bed7be84404ae9",
+      "event_plan_14.md": "sha256:6afae01a91dea8dfd8ed294896c8372a2fe5e1891ac2472da95244330531280b",
+      "event_plan_15.md": "sha256:f997bf1e4d57df34666e9352ebcb98976e1c41e08fe532236c63b5de4c754fc5",
+      "event_plan_16.md": "sha256:17dd7575e8677fcc245e824444473dd23e46d3a0d42d78cf3df8523dad9d4ed5",
+      "event_plan_17.md": "sha256:bd16f51734ce827ffd2ce6a75d78eb9ba27b1d8cb3640385d2855868df7295d7",
+      "event_plan_18.md": "sha256:d9dc9b025599ae67e6d0db1ec79e395be9152c99cc4bb57f89bb698d739a280e",
+      "event_plan_19.md": "sha256:85508bfbf8eddea9e50ca2c431eef0674b36360ed167acbd74c2b53911a93afd",
+      "event_plan_20.md": "sha256:c1f1101a84a27906b690ff60bf24fc422e862ad83e4cb0b03b88fd919e31de5d",
+      "event_plan_21.md": "sha256:0860f0fc31e34e334a665df29fd4892ddee7faf3e299672e22068a420f7aa883",
+      "event_plan_22.md": "sha256:e9fcf90de6be2fbbe3dba7758e11da4e206da964d1ad3b52ae79ecfef6900e50",
+      "event_plan_23.md": "sha256:036d7a5f435b51c3a37fd04df2bccc10c3ef231c65d3c6d95b22e82e57e4a705",
+      "event_plan_24.md": "sha256:d4e58436c0e40e7c7da700be9bfafccca3f09fcf8ad10de6e13257653e0f3c80",
+      "event_plan_25.md": "sha256:21c07a07818cc4336b09d2c176da6f241e51be34d9469339628df05f5cf55414",
+      "event_plan_26.md": "sha256:1da59e34e60754505477dc3a7e8035efaf6acda0e716f8fb0f868384fe8ae3c9",
+      "event_plan_27.md": "sha256:b17e251d7fd3624300a48c9bda69d06ecc330bcd818c04becec32748a68d5e9b",
+      "event_plan_28.md": "sha256:5d121d4db3fb07cb188a69c18a5ad1ecb0f4afb94bf834ac5ee1ef604b38938a",
+      "event_plan_29.md": "sha256:95f98cdf2258977fc0c87586d4940816615987325aa39af53530d8e3182a387d",
+      "event_plan_30.md": "sha256:b40ae6e73acf55693e21a2f88909302cbb4d712d5f27cc8267323d555533a7bc",
+      "event_plan_31.md": "sha256:9b3a2b66978aeff74dee6b040c4ca64867bcf558ed6223b978b01b765c4738f7",
+      "event_plan_32.md": "sha256:e15f6607c89790f535bca600e75ea199ff9629dbb98cb833073e4f51a5c5dc61",
+      "event_plan_33.md": "sha256:fb21d76f7acac962db5232d8f01891a7d45de412fc162be82b4d76399696e40d",
+      "event_plan_34.md": "sha256:ea45e743979c566cfb89a2ae00d5ad93c3e4b36132d993aa757406128158f66e",
+      "event_plan_35.md": "sha256:ad7828201ad095fc4a97ef7414da43cc9b61219bb44fae1bb771b7ec3aede0ad",
+      "event_plan_36.md": "sha256:ddccf6835a3354a8d26decbd91ebc46a06cb0c4aa7f5741c0fc256a3c89ba6cd",
+      "event_plan_37.md": "sha256:ff23e69aea52879c3480839cb47f7ae456059c1a1ea044432e55d4e36febc44d",
+      "event_plan_38.md": "sha256:1521f3add2fc3e13e0331be8d339e245e421ce812d557be107f244ce31e5b81c",
+      "event_plan_39.md": "sha256:8711e31a76beea978ec928942d84735452cb44faf9e738e5d27e7caf230c3db1",
+      "event_plan_40.md": "sha256:9d494c94ab50b45d6393592d630d28fd105c7b522ce55248137d28132f8ff9bf",
+      "event_plan_41.md": "sha256:f90b2e3e6e02ccc945ce5d0381c4160c20515d0be7568e6e7a22f9b79953211e",
+      "event_plan_42.md": "sha256:707d9d88a9ce1c549b737b8402318129229251b42436f6fb47dc7bb12bcd4b88",
+      "event_plan_43.md": "sha256:f72a81edc0959e6a4bb0db65152738eec4694a273ac4b06b27074b1151196d20",
+      "event_plan_44.md": "sha256:f1b595ffbe16f92e8f9974b1707a02fa7e5dba1755fb9e56ef89ee7e9a1da2ca",
+      "event_plan_45.md": "sha256:756c914c1ea36760eec707799bd4722550e1c695109957bb69684e681b9a4526",
+      "event_plan_46.md": "sha256:38b6b44ffe9f8f6960b47cda5162d0876a0cb00d035f9b41f70cc816c1d24d35",
+      "event_plan_47.md": "sha256:ee53cb6eae41f0e5ea76a6c828952a6a3f8188c2f8806ecd13396f70c7edf4ec",
+      "event_plan_48.md": "sha256:af3acdacc06b01a8362cf7fd8b334b642cd542a0d2c3227bcb9a637334164cef",
+      "event_plan_49.md": "sha256:f2c3f031da1be696b9dd96fe01653a85e97b7172a5718f00e33170161fe53b9c",
+      "event_plan_50.md": "sha256:773c0a47c2e310c32a3899720baf675d3afd3aac0847f6a5e77dbdeacac9931f",
+      "event_plan_51.md": "sha256:717726044c1f87980d300e7617fee10dd393f04cc61bd26dfd2a28f5c81bf05f",
+      "event_plan_52.md": "sha256:c9fd4e17452eba48393fc92d0dd3acc640d062a437e0d37c62db298c48ca4aec"
+    },
+    "160": {
+      "CRM_data_export_2024-12-01.md": "sha256:f82ef44df3c4001c0b6159521b0c518b6c3e3cf6b7fc76a667e5e9f23737f6e4",
+      "customer_service_ticket_system_record_2025-01-15.md": "sha256:6458801f2a99b462c62e07efffbe472c8d5f3efc5ce7b510fdec209a501832e9",
+      "marketing_event_registration_form_2025-02-20.md": "sha256:97ed83e9b7b836dba0ec8fffc236ac8a86496ece5ef746ff45cc7af470f63fb1"
+    },
+    "161": {
+      "event_plan.md": "sha256:c0a1fcfa03aae5099c654d21d177eb2603b25142fa55520fe9bf9266c355ec8a",
+      "team_responsibilities.md": "sha256:51c0990ab98d5e680b434e1b13c0a484b5d6a6f22de868c52b4943d3d57a1a2d"
+    },
+    "171": {
+      "Purchase_Order_2.txt": "sha256:573411ec996fb3892d682dca80b79666015923f34487f487d6e6cd067649094a",
+      "Purchase_Order_3.txt": "sha256:83067072a92a3c3ab6c1d5b49a5617c03ea6195d4fac22734da96c5c2db82217",
+      "PO_4.txt": "sha256:500181a4f967a460e1dc58e0b088b3e14186ea86dae1834cc616668828ac736f",
+      "Purchase_Order_5.txt": "sha256:a29ea62fe6f59c4c80d7ddf35c8d09d6053d73cd24173bd35ec1a9b882da4f5d",
+      "Purchase_Order_6.txt": "sha256:891f30131f46169eb0a1fd3168cb4f2327d54e15bc541df7323a0e1d58ffd4f8",
+      "Purchase_Order_7.txt": "sha256:e6d9590560eefbe85eb33844e36ee4a8bdb89f0aba0b1d1053ad434e5a3910a1",
+      "Purchase_Order_8.txt": "sha256:536ae20c483bf76f81d1967b409dbb58142d03f52d4a7131a7791946c4ea8051",
+      "Purchase_Order_9.txt": "sha256:9c141bcc7ef87aa5ca30a94bc24c88c8d33aeb8b3d2d3772e93abcb75c0d28df",
+      "PO_10.txt": "sha256:02b8edd83e8a42b2814c1f6a3e0b9327b56f2c4736be71f932b562b4ddeb15c4",
+      "Purchase_Order_1.txt": "sha256:22aa58fe2f14cd7d9196653bf0b2f7c3ac278aa4888ae96fa9f7a3b27f364cae"
+    },
+    "175": {
+      "Depreciation_Breakdown_2024_5.csv": "sha256:db8621fcabffb1f9dbf4c2a77d1a5b49ab1087c431689f681bd992154a8c9b3e",
+      "Depreciation_Breakdown_2024_1.csv": "sha256:08d7442ebcda307214e9ddab386732b993e9c70fe4fad982d0d70ae43408b217",
+      "Depreciation_Breakdown_2024_2.csv": "sha256:cb6433269697563a6a34196d4978276b39c9383fda794ae6f5dcbe9260ce164c",
+      "Depreciation_Breakdown_2024_3.csv": "sha256:6b41b4656b72ae2a24b54f2f41e54434ca90ee9ccec63398add50a0fe9d1d7a7",
+      "Depreciation_Breakdown_2024_4.csv": "sha256:8b61a44b44db52e55fe3446ab089457670698ee639cf4a23e1440f6a97fc9206"
+    },
+    "178": {
+      "Temporary_Work_Order_005.txt": "sha256:db90bd97cf4a682d288f04d1e5b768cd069d36ca1e0806cfc76e5894d523210a",
+      "Temporary_Work_Order_001.txt": "sha256:0ed72a674d5a3814913c9d14bec0b6d0a235fcf465ca15a300803b59a831f776",
+      "Temporary_Work_Order_002.txt": "sha256:d1be2bfca9a5b176b7fe7f57d4165c334cd96d0a2ced68a155bf43fb897b5b4f",
+      "Temporary_Work_Order_003.txt": "sha256:3d046935ede00ac7d65d74fc79cc3f25c433c33a6abb35cb72621eada77469d6",
+      "Temporary_Work_Order_004.txt": "sha256:662377ff6ca95b992b7a2a8139675a9146e3ffe8bd5cd4e3e3be1fb1b816ca7a"
+    },
+    "191": {
+      "Smart_List_Assistant_Request.md": "sha256:730ea339267c873329a3dbc18851102f67d17ce1aa5657b235d85a0e0503d9eb",
+      "Smart_List_Experience_Instructions.md": "sha256:c2b04c73f20f4f0edb4c2c1e4edcf31dfd93003148709cbf105dfb63955d0466",
+      "Access_To_Smart_List_Performance_Improvement_Tools.md": "sha256:5d6e752c1ace07ee46e8efea2ad7288ece3bf617f99fdc53a59c7425cdea61f4",
+      "Smart_Checklist_Evaluation_Set_Construction_Plan.md": "sha256:15a9499fa34c9c03705b093ef3ca1f04d3f207ec5e780bb351cae67707bf3d4c",
+      "Smart_List_Function_Optimization_Needs.md": "sha256:4edc56445a0222e76bf0068f4a5a9a48b2fea7bc085517da79c3f07824d5b438"
+    },
+    "192": {
+      "920116_2024_Satellite_Map_Measurement_And_Control_2024_Annual_Report_2025_03_03.pdf": "sha256:61f8883a8dd050d6455166be3aaa900167db375674268bd3e53bfd53a3080f6f",
+      "920111_2024_Juxing_Technology_2024_Annual_Report_2025_04_24.pdf": "sha256:9e27bc91629a079148a6fa8726cff3b00f5782f332557e541019058b0163d555",
+      "920118_2024_Taihu_Broad_2024_Annual_Report_2025_04_25.pdf": "sha256:5ddd81edd2e30a74f082501c0b499872167b8a8ff4ced67688ff1f33ee5d1c8f",
+      "920108_2024_Honghai_Technology_2024_Annual_Report_2025_04_24.pdf": "sha256:0bfbf1a71c9480def2ee1deff8bc7b0fe2aa7f83f14f44659fc656003ee2f2da",
+      "920128_2024_Shengye_Electric_2024_Annual_Report_2025_04_21.pdf": "sha256:d21775057f9e714f9b18db6961d7d789c62fe148e7613688f66b4155356c9adc"
+    },
+    "207": {
+      "Zhao_Siyuan_Resume.docx": "sha256:cd1c5486185b81436231f10b1582f36d56491a4edf5751a680180b2386ca9ca5",
+      "Zhang_Haoran_Resume.docx": "sha256:fda35ebfd81fdcf14cd2755ddc399802115af6e6ca5a2f622e0959276926fe4b",
+      "Li_Yuchen_Resume.docx": "sha256:32e2bcba2cba9830e5fe56c257d8dc75909da925084754e7ca91422fecacbf36",
+      "Wang_Jianing_Resume.docx": "sha256:8fcd7f50ec3c9b75eeb5a114954e2d5fdb80b29ebfe4e226630a48bc844e6185"
+    },
+    "224": {
+      "Stability_Special_Summary_Plan.md": "sha256:20b30a6e169c3f7290517d626b5d19314f0ebd90318f6e6571aab3a655f45311",
+      "Weekly_Stability_Group_Meeting.md": "sha256:740bc2bd9e11e29e0bbbb49cb9c8b0a17b53b39f8394a773e1ea8047ecf4673f",
+      "Stability_System_Construction_Weekly.md": "sha256:7b0f40ceb8f689be03df609559bb661871145558379b92e72885740a70e0d832",
+      "Alignment_Of_Stability_Building_Ideas_WIP.md": "sha256:2ef446cec1e2859b7d0fecaa4a8182b711155ce03f24e806a61df5f06cb0d34f",
+      "Stability_Construction_Ideas.md": "sha256:aa53ad1e407c72d6fb5a25d51b73f4a9f7b59a8ac69b067d31260dc6695c03a0",
+      "Stability_Construction.md": "sha256:c1196bcef20e1fe179a1f3550f01d1496ec95cdb2dcc43d0f6b3a1b71b69cc69",
+      "Stability_Plan.md": "sha256:7cd66ea10f7c571e03e2a4845edd92d29ae40f780628cfc2af8dd7ac7741024c",
+      "Stability_Guarantee.md": "sha256:8770031bd2a7b8ed086781fd06d4a63f5f6df11b73024e65840051d6e68d34f0"
+    },
+    "226": {
+      "bug_file1.py": "sha256:4078547abc72116417f648fd8451dfbb98f95c6b67faa4ceb4dd1720b00b2896",
+      "bug_file4.py": "sha256:82a7a66a4f097dfea4fa446811e465a6543ee0b6d2398272cbd10922607619c1",
+      "bug_file2.py": "sha256:211fc0ceee50849991a8f891b20188ce4b41eebf8ee9187d708f0a5aa69a82ba",
+      "bug_file3.py": "sha256:c199f288d01ac2893ecfb9867f7f46716fc2d900e72a577bc09c13545a8ef1a5"
+    },
+    "227": {
+      "Security_Report_1.txt": "sha256:436634830143bdd3a79fbd700833816a854506163b2c43960404f6c252edb7ed",
+      "Security_Report_2.txt": "sha256:a835ce2f75b453ee23508c7c180688ba90f362ee97d70b97117ff54e7242c0f4",
+      "Security_Report_3.txt": "sha256:33563e576ac7e995c657e33cb302a18ef252751a4258b445601ed5a2d68366e7",
+      "Security_Report_4.txt": "sha256:b2df6c4ee3c9253eb92fd4b3d1b97a0dc0d3dee345aaf79ab35f1703e1bad2c9",
+      "Security_Report_5.txt": "sha256:25fb0818e6a9257ab5fa632dd618c19addc81f89513a12072bf7e3399796192d"
+    },
+    "232": {
+      "920118_2024_Taihu_Yuanda_2024_Annual_Report_2025-04-25.pdf": "sha256:5ddd81edd2e30a74f082501c0b499872167b8a8ff4ced67688ff1f33ee5d1c8f",
+      "920111_2024_Juxing_Technology_2024_Annual_Report_2025-04-24.pdf": "sha256:9e27bc91629a079148a6fa8726cff3b00f5782f332557e541019058b0163d555",
+      "920108_2024_Honghai_Technology_2024_Annual_Report_2025-04-24.pdf": "sha256:0bfbf1a71c9480def2ee1deff8bc7b0fe2aa7f83f14f44659fc656003ee2f2da",
+      "920128_2024_Shengye_Electric_2024_Annual_Report_2025-04-21.pdf": "sha256:d21775057f9e714f9b18db6961d7d789c62fe148e7613688f66b4155356c9adc",
+      "920116_2024_Xingtu_Measurement_and_Control_2024_Annual_Report_2025-03-03.pdf": "sha256:61f8883a8dd050d6455166be3aaa900167db375674268bd3e53bfd53a3080f6f"
+    },
+    "242": {
+      "post_5.json": "sha256:ec5401fc796822dd9f16a0d881ea840abf7192b7eef84aa8ef838639c777e17e",
+      "post_1.json": "sha256:3825dafd3a9bc749572dc67813ab6247d22a76979f31db5f44016011acc159a4",
+      "post_2.json": "sha256:985fc3aff156f3339d6395642ecded416770c609e8ea594bd474b44114230294",
+      "post_3.json": "sha256:d2b5ba3cc4846b9edfea291746c8b52435014ba0d6c96a3040f38d26461be40e",
+      "post_4.json": "sha256:d185c2595b30590b03b85e7fbd6e040f3b0cc03e10bb555b84041498fb5a2434"
+    },
+    "244": {
+      "review_01.txt": "sha256:2f473126c9011e1efeb46eb7c602b660ca0acfa2fe8a0e2515f0630aad7b1faf",
+      "review_02.txt": "sha256:dd194eca8f53b4ddaa0bc0dd89d43ee6cb611e5533ad2a85b6276cb7ac4b6135",
+      "review_03.txt": "sha256:a720362c1b87264a365bb2c004a67193946f106965a7c9870348638050c2ec15",
+      "review_04.txt": "sha256:5e6ac8fd9f2d36e830885aefaa87e03e9dc9ac259bc92ec4df921b03a3a1e133",
+      "review_05.txt": "sha256:915c07ee5d1589a588d1c4eac3b47fa1fc831e65719488865f89822f70e71e71"
+    },
+    "251": {
+      "full_year_salary_management_system_2019.xlsx": "sha256:1ed0e5c158bff72601343acaa0b1561d7575990474ba1863c8114ba1ec869e1c"
+    },
+    "255": {
+      "bank_deposit_journal_full_version.xlsx": "sha256:e37167b456aaaa035bf875659bf24e69abfaa3bccfa8c4cbe6f3ea2c9de80cd6"
+    },
+    "258": {
+      "2021_yearemployee_production_and_income_expenditure_master_sheet.xlsx": "sha256:dae21f62e34d94cb09711555a63825e77f55de512292bec7648fbe11540167ca"
+    },
+    "266": {
+      "shengye_electric_2024_annual_report.pdf.docx": "sha256:56c122bdc19f1c4130bac20f6fbe0ebf9f143a8de506bfd3164022a75b404a06"
+    },
+    "267": {
+      "shengye_electric_2024_annual_report.pdf.docx": "sha256:56c122bdc19f1c4130bac20f6fbe0ebf9f143a8de506bfd3164022a75b404a06"
+    },
+    "269": {
+      "2024_yearfull_sales_operations_datadata.xlsx": "sha256:465e3d852589364eb367b1a02794125daaa5d819598d7cabd37089024a75b3a8"
+    },
+    "274": {
+      "manufacturing_enterprise_piece_rate_wage_management_system_complete_data.xlsx": "sha256:41f286f4197a036fcbb567592bfd61bb59348b2ccc5d1552855f5a579f6e39d9"
+    },
+    "276": {
+      "business_trip_summary_21.txt": "sha256:580477e27737644089e9be9d48b639cd84f94b2695bd06ef34a6477928479516",
+      "business_trip_summary_22.txt": "sha256:dca4c75dc769e11a1ee5b5b328125418aceb7b3a279a35cac02d109529db20a9",
+      "business_trip_summary_23.txt": "sha256:ac857459f7391836ebef865774c7c9cff8016f4b6b8c6ed1a8ec5b49457ae81b",
+      "business_trip_summary_24.txt": "sha256:62a5605d0d8e9ad2330a0f81dbfa29a5ca6243138b9fcec10cf328d33fa08673",
+      "business_trip_summary_25.txt": "sha256:a7d198f178cbce5f970659479bd4330647f7ff98c9742a88a202ae4e7aeb302f"
+    },
+    "277": {
+      "apparel_sales_management_system.xlsx": "sha256:9372683673dd8dc1e0c98707a642f734a54370bf4dc4d23bad40f6c4627b688b"
+    },
+    "278": {
+      "inventory_sales_purchase_data.xlsx": "sha256:8bf8772dfe2f07760740b4d7011399c2cb747c2ef04e3278abf3c49904fb7070"
+    },
+    "281": {
+      "kaima_b_2021_annualannual_report.xlsx": "sha256:5def9abaa38d55b850f36cd3bca51c5363468cbf07fe7e4cf3e15bbad677244c"
+    },
+    "284": {
+      "_work_plan_taobao_quarterly_operations_plan_template.xlsx": "sha256:e72c938c76a6a63a0959949d118efbc15b49367bc7be705db2437a0b3979bbfc",
+      "general_weekly_work_plan.xlsx": "sha256:c082e63cc314a7bc136fb062bc5b773e3b3ef9d8b9d75834dca0c4d276f83ea8",
+      "detailed_weekly_report.xlsx": "sha256:8c12ec042709334a1094331c6cb8fc600ce39ab000ea3b7e2e78029786fe689d",
+      "monthly_mandatory_metrics.xlsx": "sha256:7bb4b62f79e736a57f38ad8769d80abd0de9ff65e01dd09f1f3ff72fe82568c0",
+      "weekly_promotion_collaboration_plan_name.xlsx": "sha256:a8d2d60cd580d36363fb28a8ad3de8b0c14e44b42389d1c6378c0e66cf518ebc"
+    },
+    "286": {
+      "IntegrationTest_1.java": "sha256:3af943bc3d3e41d84885fe2a2158c284525a9313511b86242ce6c482230b3913",
+      "IntegrationTest_2.java": "sha256:d2ab233b9c869033852b9a78ede446a46ebd55a260f50c68b5a9f71c272e0e61",
+      "IntegrationTest_3.java": "sha256:a25d3a9d6258e64dbaed5efd5e56840b2026691b0587eff59cb1b5a5b05fcfbc",
+      "IntegrationTest_4.java": "sha256:2933c0d23f10c81533e1d21fc79fdc3e1473f5177d3464f8fffd58316fc6396b",
+      "IntegrationTest_5.java": "sha256:5bd555fe4f9d337b034d9fb2a19a59b71d399672d7a61f77d55df85772233372"
+    },
+    "287": {
+      "weekly_promotion_collaboration_plan_name.xlsx": "sha256:a8d2d60cd580d36363fb28a8ad3de8b0c14e44b42389d1c6378c0e66cf518ebc",
+      "monthly_mandatory_metrics.xlsx": "sha256:7bb4b62f79e736a57f38ad8769d80abd0de9ff65e01dd09f1f3ff72fe82568c0",
+      "detailed_weekly_report.xlsx": "sha256:8c12ec042709334a1094331c6cb8fc600ce39ab000ea3b7e2e78029786fe689d",
+      "general_weekly_work_plan.xlsx": "sha256:c082e63cc314a7bc136fb062bc5b773e3b3ef9d8b9d75834dca0c4d276f83ea8",
+      "_work_plan_taobao_quarterly_operations_plan_template.xlsx": "sha256:e72c938c76a6a63a0959949d118efbc15b49367bc7be705db2437a0b3979bbfc"
+    },
+    "288": {
+      "top10_product_status_table.xlsx": "sha256:3e1516c42d90f837e2c46465a6b34847d9ded43daf6d3180c8042fbf98b15077",
+      "problem_product_tracking.xlsx": "sha256:3091a6f779851053d90860ea8649bea43f8ad9a31f953dc269afdf5dbef301e9",
+      "apparel_product_shooting_sheet.xlsx": "sha256:b8053250f4673e053c03a4acc6f08f161abeca8ee89a11cd449817acd7e0562c"
+    },
+    "289": {
+      "top10_product_status_table.xlsx": "sha256:3e1516c42d90f837e2c46465a6b34847d9ded43daf6d3180c8042fbf98b15077",
+      "apparel_product_shooting_sheet.xlsx": "sha256:b8053250f4673e053c03a4acc6f08f161abeca8ee89a11cd449817acd7e0562c",
+      "problem_product_tracking.xlsx": "sha256:3091a6f779851053d90860ea8649bea43f8ad9a31f953dc269afdf5dbef301e9"
+    },
+    "291": {
+      "flagship_store_annual_ad_investment_plan_table.xlsx": "sha256:4aa28061c7d8f486d15eab0ec1d55fa6a51a4f59446a5aa122482e0e08a103eb",
+      "flagship_store_staff_salary_structure.xlsx": "sha256:8e8d262143bb6e7b7fde5cef4f333d8548a2004328189220a51a61eb6df71726",
+      "flagship_store_operations_specialist_compensation_structure.xlsx": "sha256:2b4c5f5efa7935b93f3edd5f1809f8db6f31ec94316bd8e2a12fdd74440bac38",
+      "flagship_store_category_analysis_table.xlsx": "sha256:5e18c8cff0904ca9c04025627b29303e7bb724d641f5f8f40560fdb00393402f",
+      "flagship_store_annual_budget_master_sheet.xls": "sha256:f5918e1a49c005565ab11abb28219e11a70cd15b04c1cfd5b875579a74bbc289"
+    },
+    "300": {
+      "_activity_plan_taoqianggoumust_win_campaign_plan.ppt": "sha256:c903c05cb499b95c4c3f89c2894cf267ce6ed879ccf00fee8cf74b569b6f939f",
+      "_activity_taobaoactivity_followup_sheet.xlsx": "sha256:285cde84c78104f49ce32027f384a31b87338a9e889c44b4b6cb26fec99c356a",
+      "_activity_taobao_internalpopular_rules_reference.xlsx": "sha256:5f8ff65783c7c816e2431f53bae63bc6f3ad952a2f6bffaab48a5516410bb027",
+      "_activity_daily_special_tao_coincampaign_summary.xls": "sha256:fbc696fe73f6eaa259c4789c6b063ae5827e8fcf7c78ce7f1f689280d66cd675",
+      "_activity_summary_taobaoonsite_and_offsiteactivity_requirements_summary.xlsx": "sha256:852ba0bc5106ec668302f74abeda62ca26d262c0fe5dbffc7fe6cc53a1b55445",
+      "role_definitions.txt": "sha256:a90c594c9c679a6acf60c5184e613c665d307ada2f03905f2e74de2737229c72",
+      "operation_history.json": "sha256:f9be0ac7c46bc4a916762e1c9a1c04951539bb23c706b921bb8fe83c09172593",
+      "system_permission_template.json": "sha256:b4e090f2b8c01e544bef5473386b1853d5b5a0c70ef08fc3ddf504ae9d0c21b0"
+    },
+    "306": {
+      "_zhitongche_flagship_store_zhitongche_plan_table.xlsx": "sha256:83a0b7735dcb429c8693da57cd4d649bd76aa3bca7c5e9f4841305614ce4439d",
+      "_zhitongche_zhitongche_low_price_card_first_screen_traffic_method.xls": "sha256:355db3d1d07d98a494212551966e5c1fde02661642c7c5b6a79ced46f3af4ed6",
+      "flagship_store_zhitongche_plan_table.xlsx": "sha256:1dbbcbd6a6c2087ac10b67409b91f6bdcc3a5e2d36836f949c6e349edaeffdb9",
+      "zhitongche_data.xls": "sha256:70087b9b091ef25e698d0adf42df2cc1ced482610c3963c88575fe7b2b2c0b3d",
+      "_zhitongche_zhitongche_work_plan.xlsx": "sha256:e634a3739139b55137b300ffdf451c96e9fac9aaf39b9111f6b0223941e469ca"
+    },
+    "311": {
+      "_team_full_year_attendance_sheet_editable_year_and_month.xlsx": "sha256:ba0b6dfd13a464021802afc43c898b4595494c54f0cb48720d57345732622896",
+      "_team_progress_ecommerce_project_schedule.xls": "sha256:25449dbb9dd57737193e8a924c3bbbcf33b9b4c6c6bf769cedfc29bcc4e83a1e",
+      "_team_assessment_ecommerce_department_role_assessment.doc": "sha256:50a5894e3ddf13d26d899e092772dea320936583cb59d3ab387fb08a438ceda9",
+      "_team_assessment_ecommerce_role_kpi_assessment_and_responsibilities.doc": "sha256:349101b8d223a87a91a63e3ea5379e0b7d67c9bd5c05b1e8665bdda4a9cad8de",
+      "ecommerceteam_advanced_operations_training_tracker.xlsx": "sha256:76ecf6f24395ef79a3e5c03dc8e85953f9db35cb0ebedce5996bf91003804231"
+    },
+    "314": {
+      "meeting_minutes_01.txt": "sha256:6420167bc48dcddeb112ecc2d7d15ee088bc3b41f684760ae4144e914a52cc77",
+      "meeting_minutes_02.txt": "sha256:11ff97d02020a5d5bd07bcd6269b38fb5a851c66c8f98c47ebfb7dbf15583cfe",
+      "meeting_minutes_03.txt": "sha256:23847cc91eb075763607b60a07eef28ec2c46ec3a8fee42992ffcb59cd0250b9",
+      "meeting_minutes_04.txt": "sha256:7053a164af5ddf0e50ad1c9085a8ebb71b67e86601456fc5859aecba29245faf",
+      "meeting_minutes_05.txt": "sha256:ddb1ab6ae455202af285c5a8e5f1a49ae8c10c26e2c5ac4cca4fedcc34bbab8b"
+    },
+    "328": {
+      "2-hr-department-recruitment-work-summary-PPT.pptx": "sha256:ab127c04e0d26f68b6b5f0fb09ce051989863804d425744a52034c10f50442ef",
+      "3-personnel-and-administration-work-summary-PPT.pptx": "sha256:6835cb610a8bc13b9161157ed629095a0a544353f6d36b252ff0054a6c4dd6bf",
+      "4-recruitment-work-summary-presentation-PPT.pptx": "sha256:22f6f523d0ff25d3a0528338adff6dc24f642bc44322d4f69eee826a89682972",
+      "5-annual-recruitment-work-analysis-report.docx": "sha256:dea2c7dcf553a1f2c56f82ac4e40577664513100d56732fb80b13564a8193069"
+    },
+    "329": {
+      "1-company_annual_human-resources-compensation-analysis-table.xlsx": "sha256:15fe02fd2f806a31469ec0e467b30e46f25139327f730293bf2da6eab31e8c42",
+      "3-company_monthly_-analysischarts.xlsx": "sha256:4238b2bddfdbcc030dfb1287d0c79a0e673a7f18316853f9f3bd02e9cf71144d",
+      "4-company_monthly_-analysis.xlsx": "sha256:590905833148397b9882412f7353f35d0e782f03fdc53fd0ac2b09233180a31b",
+      "5-analysis-report.docx": "sha256:bd5b951178e4ae50141f55f1cce4c4a3585ee2faceba62a41df86d38440985a7"
+    },
+    "334": {
+      "900939_2021_huili-b_-company-2021-annual-report_2022-04-28.pdf": "sha256:d6b106aa297a84faf77c56fe0735a00d9ba08f9393d7892612d349571eacbd5b",
+      "900948_2021_yitai-b-share_inner-mongolia-yitai-coal-co-ltd-2021-annual-report_2022-03-30.pdf": "sha256:ae748aa40459fc686da58af020e4c971474b18584653e623e2a40f98e05146e1",
+      "900953_2021_kaima-b_2021-annualannual-report-full-text_2022-04-27.pdf": "sha256:9477728cd366aed5da8245662d0186d889c8ee04cd5db9a3ca12d6c6ae03aecf",
+      "900957_2021_lingyun-b-share_lingyun-b-share-2021-annual-report_2022-04-20.pdf": "sha256:74c2caf1d14fb45e293ffaaef775673e6452df8e9a83859766f6cf4b09f588d5"
+    },
+    "337": {
+      "_-_-attendancetable_-_.xlsx": "sha256:ba0b6dfd13a464021802afc43c898b4595494c54f0cb48720d57345732622896",
+      "_-_ecommerce-project-progress-plan.xls": "sha256:25449dbb9dd57737193e8a924c3bbbcf33b9b4c6c6bf769cedfc29bcc4e83a1e",
+      "_-_ecommerce-department-role-evaluation-form.doc": "sha256:50a5894e3ddf13d26d899e092772dea320936583cb59d3ab387fb08a438ceda9",
+      "_-_ecommerce-rolesKPI-table.doc": "sha256:349101b8d223a87a91a63e3ea5379e0b7d67c9bd5c05b1e8665bdda4a9cad8de"
+    },
+    "340": {
+      "1-employee-birthday-event-notice-poster.docx": "sha256:9451326c33d2b795a5b4930f0cc9ca45fe78c211e189a7b510ef72b9672fabe6",
+      "2-employee-birthday-greeting-card.docx": "sha256:eaf13a2474eb0e691f2fc93391a7ae5442b05a8e88749ebd673ea783c5ca714c",
+      "7-birthday-event-planning-proposal.xlsx": "sha256:f416310ce9f65fdb89170c23ca8aab5a6343619db70915dabbbd529fced2e504",
+      "4-employee-PPTtemplate.pptx": "sha256:283aeb476bf351765e93ffaeecd2500fdf1be10ee6749d878b5729d7e1bdb5f7"
+    },
+    "346": {
+      "1-administrative-fixed-assets-management-table.xlsx": "sha256:72d4a5142f6ba74213f27e661aaf6aafb5c8fa18c8efac197f4b615a111a0da7",
+      "fixed-assets-scrap-and-damage-application-approval-form.docx": "sha256:3923dbbcbbc52dfb4837e249825c37256bf0bb67bd699dd7e3525b4baa362954",
+      "fixed-assets-ledger_filtered-summary_.xlsx": "sha256:44208444c2a1baf3eb99227c23571a54f640aa216cb075731e3d6d5eac5262cf",
+      "register_-_.xlsx": "sha256:9c7046858acc330d0db888349ca3e4d2f02b2c8af17054dc3d4e7aa72530f59b"
+    },
+    "354": {
+      "2025-annual-work-plan-table-administrative.xlsx": "sha256:3cb786ef80594ca2cba854fde23149c1d3d2f47dfc954f0192d3a3a082c1ff94",
+      "companyadministrative-chart_-_.docx": "sha256:1f11817cdaef80f74b53f1299b55e7dc8943470921a949c9f651ffadc4ab35b0",
+      "admin-department-second-half-work-plan.xlsx": "sha256:774a3094f6cb8df015df8395952b08917ad1068c83cd4f549554d3891341fee8",
+      "panorama-of-10-major-administrative-system-modules.xlsx": "sha256:f9914b191e2bc342bf803f6e163892091cf0846dc42de291f4fb1cecbea8ab64"
+    },
+    "357": {
+      "project-plan_3.txt": "sha256:f2f6b11d0c6a2516d4c6bf0486685b304362c3501e24d17281d8ec5400cf93ff",
+      "project-plan_5.txt": "sha256:f2a172037fc81780f44765fdef064c520e07b467e4a67a0d1553a89dc378fd26",
+      "project-plan_4.txt": "sha256:19f80f8091ab7f135be00b5643b7e9133c57767222dde4d7e7a792da6cc10e1a",
+      "project-plan_1.txt": "sha256:97aea26423a18cb7a9ac4b31c03972c5324e7f0f572b969dd918c99764c5519b",
+      "project-plan_2.txt": "sha256:c248bba9da58ecbb41c0ecca1162206d294f0757ce8278ebbd1522a388445b1a"
+    },
+    "358": {
+      "chat_7753.txt": "sha256:ada79a820cfa3573100a631136615893b80aa268fec68dc55fde44a8d60fe7df",
+      "analysis-report_8950.txt": "sha256:dbe85383c74785c424c5aa2a7b868391adbf88042139ac34c71527d385e48924",
+      "personnel-list_7079.csv": "sha256:58d1b1463f20093526eca08b45e79e2a89fd6f6f176dd7dad1be2599e6711b52",
+      "summary-report_2686.csv": "sha256:535e80e1b9815ed8c9479d09bcfd1612302a6b9eb32e2aa2b8dd3af4e63cfb88"
+    },
+    "359": {
+      "_medical-device-classification-catalog_70_.xlsx": "sha256:e9ba4b1fe72157dd12ee90b49efeddf212e1cfad34126fd07491123a55c16fa4",
+      "_medical-device-classification-catalog_75_.xlsx": "sha256:2ada25e246bdb017bc4020a499ce121a5b660a2e2e49fbb93f6fd6ccefa205d5",
+      "_medical-device-classification-catalog_79_.xlsx": "sha256:a66fc4bbe75d99460f83fa2f7466db1d6153efc4735fdd35e1534da533397649",
+      "_medical-device-classification-catalog_21_.xlsx": "sha256:495703a2a4e6212b8ac9ffbbf62d3f0e38cd80c19ebf46f46c3edf0c55bdd45d"
+    },
+    "360": {
+      "10-7_top_10_malignant_tumor_mortality_rates_overall.xlsx": "sha256:b6ee0903c4596d1027179cb31c88b4ad4ee7d28b6573bdec1315fccdee3ed71a",
+      "10-9_top_10_malignant_tumor_mortality_rates_female.xlsx": "sha256:cbf000b22dda1e26af0ac384422bdb5711011565964aad03ab4e121917083e5f",
+      "10-10_top_10_malignant_tumor_mortality_rates_urban.xlsx": "sha256:6eac3e1681193dd55a3b6af64c5ad0ca6ebd3028ed13a2c0bec68221fb6d2f02",
+      "10-11_top_10_malignant_tumor_mortality_rates_rural.xlsx": "sha256:3344296391f4aee2982cb6b12a87b02df86ea69627c69bde1b6e0b09e6089bfa"
+    },
+    "363": {
+      "2601.09974v1.pdf": "sha256:2fb4e69405425c6c19cba7a320ebe28c5f91b4ab1d6bee30cb8ddcacc079695f",
+      "2601.11969v2.pdf": "sha256:dcad73f1f174b991533c5d1e634fa690949d7a16fda80117cd1ae13fa5d18986",
+      "2601.12099v1.pdf": "sha256:55a7cff1c9538fe8fb696ecee28486311c81e46857d86df05d42ceacbb8100f5",
+      "2601.12951v1.pdf": "sha256:668925b8fcc8a4794ab0204ccdb84a1f513a416be862041bb66a281126de080f"
+    },
+    "372": {
+      "temp_document_8.txt": "sha256:9f9249760067d5cd73f688ec32b1776d7fbab071e3ce9b550ce338830fba0230",
+      "temp_document_9.txt": "sha256:777a820ac99828e857b1e45898654feb28e6088ad45aee63adc2c3a5bc8e66ef",
+      "temp_document_10.txt": "sha256:0d1e22f2d364938081415f24effa7736779b7f3f0ac9fb881611b38524ac4577",
+      "temp_document_11.txt": "sha256:4bd34ecf7a2529e0435d1e0841973a65aaafaf9a991220be2b3fbaa9350b99cf",
+      "temp_document_12.txt": "sha256:9fbcf15120c683b38e5e24497be6573c7dfbede865e10c24280c6e30aa133744",
+      "temp_document_13.txt": "sha256:570e26ea1c1c09c1e38ebf407624afcb8944eee16436ec0af320eb3b922ddd0f",
+      "temp_document_14.txt": "sha256:017e1323fba38bd3f1a7fd1cda0920eb715bf8ffb96e150ac9bf30aa07bca4c6",
+      "temp_document_15.txt": "sha256:b664414bda410ce7b5a1687198d3f5a06157beb3b735b35cbad639883dafffc2",
+      "temp_document_16.txt": "sha256:eecb433b82ec9c4c485ace0f32fb7b13aab4db1c1ffc0e19f807f514689f1cc6",
+      "temp_document_17.txt": "sha256:573edcaa22f89776b2996bb227f04b6a506fcf41628dfa3e4345d8963f49b011",
+      "temp_document_18.txt": "sha256:6c958dd63146ad7fa28a20892a4f1d835a0c870c008303f2714cf2ff893d8232",
+      "temp_document_19.txt": "sha256:2f1dd93466bab82ec53d56d5598b45ca80e1f78dede89cf7436b5874fe5c1580",
+      "temp_document_20.txt": "sha256:3e3b8ab1c479286ee53059755a9d47becb876c19df43450015bf7e641cefe1da",
+      "temp_document_21.txt": "sha256:514fda65846081f815a14855ec5aebd48ee86c37ddb19e2c41df3e18056ab168",
+      "temp_document_22.txt": "sha256:b56db84e09258061cd52a568aeb3081764cb3dac5bea31ef74c01c8076f97763",
+      "temp_document_23.txt": "sha256:e6be75686d6940b0af97bbf1eb8446fca4006d6880e38c2875bb6492665c774d",
+      "temp_document_24.txt": "sha256:1efa1fd9530e065478efe555863d150e14e8396331953e7b82ea622a221e12c5",
+      "temp_document_25.txt": "sha256:88f3eeacb9ffdf16e6c57125d6fced06a48771ecb080bcc3903b43ffd3acca1d",
+      "temp_document_1.txt": "sha256:52b123043d18c060055a2d8d4c70128d426a4734175f6f35e61d3a4505d913d6",
+      "temp_document_2.txt": "sha256:0cbdcb2c7eac8a2d3d2a97c5c9976d6ad1955c3563b83207c0e4d0aed32f3396",
+      "temp_document_3.txt": "sha256:c14a791ae8bae0a0d149a243d3a57a3edb8a7434689464e1fc6eaf4d50886326",
+      "temp_document_4.txt": "sha256:1425f920992c36488ffc50f26f114f44b780ca1a69ef5b3e181366070328ce56",
+      "temp_document_5.txt": "sha256:05364c5deff6cdfb98ea270400f269af67b33401cefff24f21cde41a690e88a6",
+      "temp_document_6.txt": "sha256:e6b0904f46f05b6921f593bd2248e88a60808ca69638a329490b08ce03b2e404",
+      "temp_document_7.txt": "sha256:c7ce408d706ca5b5be786886820793db72f854285f776bcb99ef3ba26c915dfc"
+    },
+    "373": {
+      "roster_3027.csv": "sha256:6ad6945d84700e52f631d43aa6c163edb198aebf5d78532d51178f6d51a1d67f",
+      "roster_7464.csv": "sha256:50fd4ccdbf93c9970a8f400b9d636742fe8b9ccf1288529c7cc0579ede527f33",
+      "annual_report_6617.csv": "sha256:392fdbe8966fea92c63adf2572e69a80db1fd1a336335cc744bb77150ac37f2d",
+      "approval_slip_6511.csv": "sha256:8eb5b8c28c0055ace2aa97089b81902c4f99baaaadfd2bbd211b1b495930322c",
+      "headcount_statistics_8521.csv": "sha256:27735ed47e185170eeb015adec03c084839123009c66b46a6abbf2e0258d63c7",
+      "approval_form_2637.csv": "sha256:78a35dc28817ae1c5d6a7285a3b8f2fcabbe58a51c349b27124443c5efd90e50",
+      "data_statistics_1354.csv": "sha256:bc1880cf552de22b200edcf736b56b924a9838a9a4c878e793fb08b54ec4f1e8",
+      "maintenance_plan_6358.csv": "sha256:9ea041083ca683f85ac9f23257760351d66545c3b9f2e3f702e5a00e4cf363e8",
+      "supplies_request_4437.csv": "sha256:af4b94140edac55f605abf9dd9fec2c8c245c45c890e1365dbc79f880886f434",
+      "project_plan_1673.csv": "sha256:4d3ad9cb1bc94630d12417a4b732b4cdc2a4fbb17a27ca426b4b0145c6081826",
+      "monthly_report_5815 copy 2.csv": "sha256:acf4650b1f676402e1a9e4ddd05241165115e855592448f376e6b368b132cc3a",
+      "monthly_report_5815 copy.csv": "sha256:acf4650b1f676402e1a9e4ddd05241165115e855592448f376e6b368b132cc3a",
+      "monthly_report_5815.csv": "sha256:acf4650b1f676402e1a9e4ddd05241165115e855592448f376e6b368b132cc3a",
+      "asset_inventory_2315.csv": "sha256:71cc75fcc6cc04ea0a4756233d1e670ee36f03c8a61ca4b17ca2a74b6f754036",
+      "survey_form_5789.csv": "sha256:50336a4e4a7fd92bad243bc1bf344321cc5e516e8aacaaed96bbe160de2b834c",
+      "expense_statistics_1425.csv": "sha256:bc1e452a7813c82a0c570fe3fcf6e41c6a35bfefe1ee80d9195042e1440b4126",
+      "work_log_9340.csv": "sha256:dc47e0d759a63cdfe4c26432d2cf407fe288cf6711be8e8c991ea7cd09ad4b3b",
+      "acquisition_request_2597.csv": "sha256:41981934e60cc1fdded42544743580d82b7d3a57eed6aeb844c70ed2d0e06ad9",
+      "acquisition_request_8054.csv": "sha256:d70cf3e685ab6a2dcd74b9ad21d0d8f61fad7806fb7579f68ddf0c5e488619ad",
+      "roster_1719.csv": "sha256:88f99508c5e45ddafbf96febd7fb3d7b851e7cc0c5237108f59719dbb85ad71b"
+    },
+    "374": {
+      "leave_request_7893.md": "sha256:6b72ff9c1a19e9b7ba076dfa5a15c054fcd27a7288683b0fd2b63f8b159bb323",
+      "reimbursement_request_2092.html": "sha256:52fd351b199b54ea329c8edc9e5ce681c4c2b92d89f00fac2fb42baf2db1222b",
+      "acquisition_request_6203.txt": "sha256:668571a65e872d63af7fb5b2fad16bf8eab7ed78813c6c4bb3e0edc55281171f",
+      "maintenance_plan_1299.json": "sha256:1d36e7080ffe419d945b25f087ccf0017824d882dabf14a8f275e3428a57b8b7",
+      "maintenance_plan_9326.json": "sha256:2bd8a23a1a9e470c53e0bd12b2bbc3e3b67ad4296fcaed0e3a3a0b041e6e8baf"
+    },
+    "380": {
+      "post_1.json": "sha256:3825dafd3a9bc749572dc67813ab6247d22a76979f31db5f44016011acc159a4",
+      "strategic_plan_1.md": "sha256:00b4f7ef3a2730828d746128688c07e5a6ecfe352a45308717b24fff2129b2b6",
+      "market_analysis_1.json": "sha256:cf30e910daa0e03b0a474eb21e632a19b76b40406bf797c842822e39555a4519",
+      "training_module_1.md": "sha256:209560f4d4ea22564b68284c46b04c9804dd3cb0e5a14697d923f07864aa8a28",
+      "user_feedback_category_202601.md": "sha256:7184739240b7589758a7c942a7385ce2c448e52c17d0fc7a2efde42bbbf44fe2"
+    },
+    "381": {
+      "4-12_revenue_and_expenditure_of_tertiary_public_hospitals_2023.xlsx": "sha256:9a2f158e02882724a9e3482a8e15268247de55328123799d930f2453ae77f5d4",
+      "4-6_assets_and_liabilities_of_health_institutions_2023.xlsx": "sha256:383c28351c5fad5d4f5333b4345e0f220f45a9229eb8c39f7f96cb9b2e94b81d",
+      "4-4-2_national_drug_production_and_distribution_2023.xlsx": "sha256:f58d8e9399dad526d0ed959b31445cc0a611ada9aee1597b93f8eaf0d901e0d6",
+      "4-20_avg_medical_expense_per_outpatient_inpatient_visit_public_hospitals_by_region_2023.xlsx": "sha256:0436bf5c189717d5cea7f77eccaab45a4e71f6bb8bc33ddcafd1ddbf6885ca5e",
+      "9-10_chronic_disease_prevalence_age_15_plus_surveyed_regions_2023.xlsx": "sha256:0880a3a32755017ef7db36b9a784e1714ce0d955ab6ac8201b9c3fe521f874bd"
+    },
+    "386": {
+      "D1_morning_session_transcript.txt": "sha256:8bfe3d6e4f97400bf925f348b36ae1623b898ebda29bdaeffe157a7c01b24767",
+      "D2_afternoon_session_transcript.txt": "sha256:b889a5b51af5b177e804c7b21a7c8cf08408c3cb0ec90712f2f590f125dfbf71",
+      "DAU_behavior_logs_2025Q4-2026Q1.xlsx": "sha256:a70a92be20386d809ed5ffa8476d34e9c5fe76fe64b39191402f8921eb49d3aa",
+      "NPS_survey_data_2026-02.xlsx": "sha256:38e225cd0011119f635bab64f502e3c0cc1c3a4b619b851e872167be1504e5ae",
+      "meeting_recording_metadata.json": "sha256:b8870c112a399db52dfaed3cf9da443fd4d5fe224f7c9bd7ce1dfde6f1cc2e95",
+      "competitor_monitoring_weekly_report_W01-W12.xlsx": "sha256:fad11d924e900f2e730429522cbb3a0a1c56523165642bea9693275791176cce",
+      "enterprise_customer_CRM_2026Q1.xlsx": "sha256:0b4306aa793d5b13aaf01e8640a91642dd8be24cd4dd56c9d938c17d87c33013"
+    },
+    "388": {
+      "competitor_analysis.json": "sha256:b5a69ff1e6263396f495349325ae0d85ef34e3ae4a9241bb33274ca4c7fa6aef",
+      "meeting_minutes_Q1_review.txt": "sha256:e170258089be23f3e87f09821255d18999eda2d7f179a980378e04b92e158f8c",
+      "team_performance_KPI.xlsx": "sha256:dd3419215760e1527688b7a5a5cafc86941c1c3035a852440f37a70000d74263"
+    }
+  }
+}
